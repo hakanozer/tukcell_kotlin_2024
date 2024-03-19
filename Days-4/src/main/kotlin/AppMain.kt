@@ -109,5 +109,11 @@ fun main() {
         }
     }
 
+    val a = 9.4
+    val b = 9.0
+    val c = 0.4
+    val x = a - (b + c)
+    print(x)
+
 
 }
