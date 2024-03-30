@@ -9,4 +9,8 @@ class C : Base {
         println("C End: $end")
     }
 
+    fun y() {
+        println("y call")
+    }
+
 }

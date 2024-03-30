@@ -6,7 +6,11 @@ class B : Base {
 
     override fun call() {
         val end = action(20)
-        println("A End: $end")
+        println("B End: $end")
+    }
+
+    fun x() {
+       println("x call")
     }
 
 
