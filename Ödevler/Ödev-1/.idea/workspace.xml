@@ -10,9 +10,9 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 7
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 7
+}</component>
   <component name="ProjectId" id="2eGXg6Cdt0WbCjuF4yQmG4hOGG2" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -24,13 +24,15 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/Terayu/Documents/GitHub/tukcell_kotlin_2024/Ödevler/Ödev-1"
+    "last_opened_file_path": "C:/Users/Terayu/Documents/GitHub/tukcell_kotlin_2024/Ödevler/Ödev-1",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="jdk-18.0.2-corretto-18.0.2-4caba194b151-5720f15e" />
+        <option value="jdk-18.0.2-temurin-18.0.2.1-4caba194b151-16d94e77" />
       </set>
     </attachedChunks>
   </component>
@@ -42,7 +44,11 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1711531996288</updated>
+      <workItem from="1711902150418" duration="19000" />
     </task>
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
   </component>
 </project>
