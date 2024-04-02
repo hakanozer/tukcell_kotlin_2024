@@ -1,4 +1,12 @@
-class DB {
+class Using  {
+    private val use = DB()
+
+    fun call() {
+        use.dbConnect()
+    }
+}
+
+private class DB {
 
     private val dbName = "project.sqlite"
     private val dbVersion = 1

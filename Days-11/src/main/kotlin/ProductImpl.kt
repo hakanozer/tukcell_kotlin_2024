@@ -1,7 +1,9 @@
 import kotlin.random.Random
 
 
-class ProductImpl : IProduct, IBasket {
+open class ProductImpl : IProduct, IBasket {
+
+    protected val age = 30
 
     override var name: String = ""
         get() = field

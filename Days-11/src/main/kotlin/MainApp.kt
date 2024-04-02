@@ -12,7 +12,8 @@ fun main() {
     println(IProduct.name)
     IProduct.name = null
 
-    val db = DB()
-    db.dbConnect()
+    val db = Using()
+    db.call()
+
 
 }
