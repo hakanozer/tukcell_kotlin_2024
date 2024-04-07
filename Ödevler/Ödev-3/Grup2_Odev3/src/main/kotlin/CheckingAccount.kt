@@ -1,16 +1,25 @@
 package org.example
 
-class CheckingAccount : Account() {
-    override val id: String
-        get() = TODO("Not yet implemented")
-    override val balance: Double
-        get() = TODO("Not yet implemented")
+class CheckingAccount(
+    id: String,
+    balance: Double,
+    val transactionFee: Double = 0.02,
+) : Account(id, balance) {
 
-    override fun withdraw(id: String, balance: Double) {
-        TODO("Not yet implemented")
+    fun getTransactionFee(amount: Double) {
+        balance -= amount * transactionFee
     }
 
-    override fun deposit(id: String, balance: Double) {
-        TODO("Not yet implemented")
+    override fun withdraw(customer: Customer, amount: Double) {
+        if (balance >= amount) {
+            balance -= amount
+            getTransactionFee(amount)
+        }
     }
+
+    override fun deposit(customer: Customer, amount: Double) {
+        balance += amount
+        getTransactionFee(amount)
+    }
+
 }
