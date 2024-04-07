@@ -1,11 +1,22 @@
 package org.example
 
-abstract class Account {
+abstract class Account(
+    var id: String,
+    var balance: Double
+) {
 
-    abstract val id: String
-    abstract val balance: Double
+    abstract fun withdraw(customer: Customer, amount: Double)
+    abstract fun deposit(customer: Customer, amount: Double)
 
-    abstract fun withdraw(id: String, balance: Double)
-    abstract fun deposit(id: String, balance: Double)
+    fun checkCheckingAccountBalance(customer: Customer): Unit {
+        customer.checkingAccountList?.forEachIndexed { index, checkingAccount ->
+
+            println("${index+1}. hesabın bakiyesi : ${checkingAccount.balance}")
+        }
+    }
+
+    fun checkSavingAccountBalance(customer: Customer): Double {
+        return customer.savingsAccount?.balance!!
+    }
 
 }
