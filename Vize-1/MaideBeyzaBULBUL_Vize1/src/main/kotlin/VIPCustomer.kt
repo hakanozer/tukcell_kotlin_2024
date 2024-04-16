@@ -1,0 +1,1 @@
+class VIPCustomer(name: String, email: String, phoneNumber: String, val vipLevel: Int) : Customer(name, email, phoneNumber)
