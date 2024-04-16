@@ -1,18 +1,26 @@
 import java.time.LocalDate
 
-class SavingsAccount(override val accountId : String, override val customer: Customer, override var balance: Double, val time : LocalDate) : Account {
+class SavingsAccount(
+    override val accountId: String,
+    override val customer: Customer,
+    override var balance: Double,
+    private val time: LocalDate
+) : Account {
 
     private val interest = 0.04 // faiz oranı
 
     //Vadeli
     override fun deposit(amount: Double) {
-        balance+=amount
+        balance += amount
         println("Başarılı bir şekilde para eklediniz. Yeni Bakiye: $balance TL")
     }
 
-    override fun withdraw(amount: Double)  {
-        if(balance>amount){balance-=amount}
-        else{println("Bakiye yetersiz. Bakiye: $balance TL")}
+    override fun withdraw(amount: Double) {
+        if (balance > amount) {
+            balance -= amount
+        } else {
+            println("Bakiye yetersiz. Bakiye: $balance TL")
+        }
 
     }
 

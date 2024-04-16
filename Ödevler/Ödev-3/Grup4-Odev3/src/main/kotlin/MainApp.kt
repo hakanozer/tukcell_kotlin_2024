@@ -1,11 +1,12 @@
 import java.time.LocalDate
 import java.util.UUID
+
 fun main() {
     // kullanıcı ekleme
     val customer = Customer("011021", "Ali", "Demir")
     // tasarruf hesabı
     val time = LocalDate.now()
-    val savingAccount1 = SavingsAccount(customer.id + UUID.randomUUID() ,customer, 100.0, time)
+    val savingAccount1 = SavingsAccount(customer.id + UUID.randomUUID(), customer, 100.0, time)
     // normal hesabı
     val checkingAccount1 = CheckingAccount(customer.id + UUID.randomUUID(), customer, 2000.0)
     // Kullanıcıya tasarruf hesabı ekleme
@@ -38,4 +39,5 @@ fun main() {
     }
     // Kullanıcının hesabını silme
     customer.removeAccount(savingAccount1)
+
 }
