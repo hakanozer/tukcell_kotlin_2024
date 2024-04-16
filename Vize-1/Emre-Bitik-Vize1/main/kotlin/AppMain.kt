@@ -5,7 +5,7 @@ fun main() {
     // Sadakat müşterisi ekleme
     customerManager.addRegularCustomer("101","Ahmet DEMİR", "ahmetdmr@mail.com", "5321654987", 100)
     customerManager.addRegularCustomer("103","Mehmet KAL", "mehmetkal@mail.com", "111111111", 15)
-    //customerManager.addRegularCustomer("Mehmet DEMİR", "mehmet.dmr@mail.com", "5321784987", 100)
+    
 
     // Vip müşterisi ekleme
     customerManager.addVIPCustomer("102","Ela KAÇMAZ", "elak54@mail.com", "56666458", 3)
