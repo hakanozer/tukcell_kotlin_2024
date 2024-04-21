@@ -1,0 +1,1 @@
+setOnApplyWindowInsetsListener yeni özelliği tüm yönleri ile araştırılacak, bir sayfalık kendi araştırma ve yazınızdan oluşan bir doküman yazınız.
