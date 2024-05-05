@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+      >
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".DetailActivity">
+
+
+            >
+        <ImageView
+            android:id="@+id/iv_detail"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:scaleType="fitXY"
+            android:src="@drawable/image_detail"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_25sdp"
+            android:layout_marginTop="@dimen/_16sdp"
+            android:fontFamily="@font/gilroy_bold"
+            android:text="Tanya Nguyen"
+            android:textColor="@color/title_color"
+            android:textSize="@dimen/_25ssp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/iv_detail" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/location_container"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_22sdp"
+            android:layout_marginTop="@dimen/_6sdp"
+            app:layout_constraintStart_toStartOf="@id/tv_name"
+            app:layout_constraintTop_toBottomOf="@id/tv_name">
+
+            <ImageView
+                android:layout_width="@dimen/_19sdp"
+                android:layout_height="@dimen/_19sdp"
+                android:layout_marginTop="@dimen/_1sdp"
+                android:src="@drawable/ic_location"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginStart="@dimen/_28sdp"
+                android:alpha="0.48"
+                android:fontFamily="@font/gilroy_medium"
+                android:text="London, UK"
+                android:textColor="@color/title_color"
+                android:textSize="@dimen/_16ssp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_download"
+            android:layout_width="@dimen/_59sdp"
+            android:layout_height="@dimen/_59sdp"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:layout_marginEnd="@dimen/_22sdp"
+            android:background="@drawable/button_download"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/tv_name" />
+
+        <LinearLayout
+            android:id="@+id/icon_container"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_22sdp"
+            android:layout_marginTop="@dimen/_25sdp"
+            android:orientation="horizontal"
+            app:layout_constraintStart_toStartOf="@+id/location_container"
+            app:layout_constraintTop_toBottomOf="@+id/btn_download">
+
+            <ImageButton
+                android:layout_width="@dimen/_22sdp"
+                android:layout_height="@dimen/_22sdp"
+                android:background="@null"
+                android:src="@drawable/ic_heart" />
+
+            <ImageButton
+                android:layout_width="@dimen/_22sdp"
+                android:layout_height="@dimen/_22sdp"
+                android:layout_marginStart="@dimen/_18sdp"
+                android:background="@null"
+                android:src="@drawable/ic_message" />
+
+            <ImageButton
+                android:layout_width="@dimen/_22sdp"
+                android:layout_height="@dimen/_22sdp"
+                android:layout_marginStart="@dimen/_186sdp"
+                android:background="@null"
+                android:src="@drawable/ic_bookmark" />
+
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/_25sdp"
+            android:layout_marginTop="@dimen/_18sdp"
+            android:alpha="0.5"
+            android:fontFamily="@font/inter_regular"
+            android:text="@string/description"
+            android:textColor="@color/title_color"
+            android:textSize="@dimen/_14ssp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/icon_container" />
+
+        <LinearLayout
+            android:id="@+id/tag_container"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_19sdp"
+            android:orientation="horizontal"
+            app:layout_constraintStart_toStartOf="@+id/textView"
+            app:layout_constraintTop_toBottomOf="@+id/textView">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_25sdp"
+                android:layout_marginVertical="@dimen/_2sdp"
+                android:alpha="0.64"
+                android:background="@drawable/button_tag"
+                android:fontFamily="@font/gilroy_medium"
+                android:paddingHorizontal="@dimen/_18sdp"
+                android:paddingVertical="@dimen/_3sdp"
+                android:text="@string/photography"
+                android:textAllCaps="false"
+                android:textSize="@dimen/_11ssp" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_25sdp"
+                android:layout_marginVertical="@dimen/_2sdp"
+                android:layout_marginStart="@dimen/_8sdp"
+                android:alpha="0.64"
+                android:background="@drawable/button_tag"
+                android:fontFamily="@font/gilroy_medium"
+                android:paddingHorizontal="@dimen/_18sdp"
+                android:paddingVertical="@dimen/_3sdp"
+                android:text="@string/fashion"
+                android:textAllCaps="false"
+                android:textSize="@dimen/_11ssp" />
+
+        </LinearLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
+</layout>
