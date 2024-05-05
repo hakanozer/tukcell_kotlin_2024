@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:minWidth="414dp"
+    android:minHeight="896dp"
+    tools:context=".MainActivity">
+
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="313.28dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="80dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </FrameLayout>
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        app:layout_constraintStart_toStartOf="@+id/frameLayout"
+        app:layout_constraintTop_toTopOf="@+id/frameLayout"
+        app:srcCompat="@drawable/profile_pic" />
+
+    <FrameLayout
+        android:id="@+id/frameLayout3"
+        android:layout_width="169.28dp"
+        android:layout_height="116dp"
+        android:layout_marginStart="144dp"
+        android:layout_marginTop="2dp"
+        app:layout_constraintStart_toStartOf="@+id/frameLayout"
+        app:layout_constraintTop_toTopOf="@+id/frameLayout">
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/frameLayout5"
+        android:layout_width="142.28dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="80dp"
+        app:layout_constraintStart_toStartOf="@+id/frameLayout3"
+        app:layout_constraintTop_toTopOf="@+id/frameLayout3">
+
+    </FrameLayout>
+
+    <Button
+        android:id="@+id/btnDetail"
+        android:layout_width="106dp"
+        android:layout_height="36dp"
+        android:background="@drawable/round_btn"
+        android:fontFamily="@font/inter"
+        android:text="Detail"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@+id/frameLayout5"
+        app:layout_constraintTop_toTopOf="@+id/frameLayout5" />
+
+    <ImageButton
+        android:id="@+id/btnSend"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="#00FFFFFF"
+        app:layout_constraintEnd_toEndOf="@+id/frameLayout5"
+        app:layout_constraintTop_toTopOf="@+id/frameLayout5"
+        app:srcCompat="@drawable/ic_send" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="166dp"
+        android:layout_height="32dp"
+        android:fontFamily="@font/gilroy_bold"
+        android:text="Shane Richar"
+        android:textAlignment="textStart"
+        android:textColor="#00044D"
+        android:textSize="27sp"
+        app:layout_constraintStart_toStartOf="@+id/frameLayout3"
+        app:layout_constraintTop_toTopOf="@+id/frameLayout3" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="130dp"
+        android:layout_height="28dp"
+        android:layout_marginTop="36dp"
+        android:fontFamily="@font/gilroy_medium"
+        android:text="Photographer"
+        android:textColor="#6600044D"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/frameLayout3"
+        app:layout_constraintTop_toTopOf="@+id/textView2" />
+
+    <FrameLayout
+        android:id="@+id/frameLayout2"
+        android:layout_width="311dp"
+        android:layout_height="62dp"
+        android:layout_marginTop="48dp"
+        app:layout_constraintEnd_toEndOf="@+id/frameLayout"
+        app:layout_constraintStart_toStartOf="@+id/frameLayout"
+        app:layout_constraintTop_toBottomOf="@+id/frameLayout">
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/frameLayout4"
+        android:layout_width="55dp"
+        android:layout_height="62dp"
+        app:layout_constraintStart_toStartOf="@+id/frameLayout2"
+        app:layout_constraintTop_toTopOf="@+id/frameLayout2">
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/frameLayout6"
+        android:layout_width="87dp"
+        android:layout_height="62dp"
+        android:layout_marginStart="95dp"
+        app:layout_constraintStart_toStartOf="@+id/frameLayout2"
+        app:layout_constraintTop_toTopOf="@+id/frameLayout2">
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/frameLayout7"
+        android:layout_width="89dp"
+        android:layout_height="62dp"
+        android:layout_marginStart="222dp"
+        app:layout_constraintStart_toStartOf="@+id/frameLayout2"
+        app:layout_constraintTop_toTopOf="@+id/frameLayout2">
+
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="30dp"
+        android:layout_height="32dp"
+        android:fontFamily="@font/gilroy_medium"
+        android:text="98"
+        android:textColor="#00044D"
+        android:textSize="27sp"
+        app:layout_constraintStart_toStartOf="@+id/frameLayout4"
+        app:layout_constraintTop_toTopOf="@+id/frameLayout4" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="55dp"
+        android:layout_height="28dp"
+        android:layout_marginTop="34dp"
+        android:fontFamily="@font/gilroy_medium"
+        android:text="Photo"
+        android:textColor="#6600044D"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/frameLayout4"
+        app:layout_constraintTop_toTopOf="@+id/frameLayout4" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="41dp"
+        android:layout_height="32dp"
+        android:fontFamily="@font/gilroy_medium"
+        android:text="10k"
+        android:textColor="#00044D"
+        android:textSize="27sp"
+        app:layout_constraintStart_toStartOf="@+id/frameLayout6"
+        app:layout_constraintTop_toTopOf="@+id/frameLayout6" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="87dp"
+        android:layout_height="28dp"
+        android:layout_marginTop="34dp"
+        android:fontFamily="@font/gilroy_medium"
+        android:text="Followers"
+        android:textColor="#6600044D"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/frameLayout6"
+        app:layout_constraintTop_toTopOf="@+id/frameLayout6" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="46dp"
+        android:layout_height="32dp"
+        android:fontFamily="@font/gilroy_medium"
+        android:text="920"
+        android:textColor="#00044D"
+        android:textSize="27sp"
+        app:layout_constraintStart_toStartOf="@+id/frameLayout7"
+        app:layout_constraintTop_toTopOf="@+id/frameLayout7" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="89dp"
+        android:layout_height="28dp"
+        android:layout_marginTop="34dp"
+        android:fontFamily="@font/gilroy_medium"
+        android:text="Following"
+        android:textColor="#6600044D"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/frameLayout7"
+        app:layout_constraintTop_toTopOf="@+id/frameLayout7" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="167dp"
+        android:layout_height="132dp"
+        app:layout_constraintEnd_toEndOf="@+id/frameLayout13"
+        app:layout_constraintTop_toTopOf="@+id/frameLayout13"
+        app:srcCompat="@drawable/image2" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="167dp"
+        android:layout_height="132dp"
+        android:layout_marginTop="150dp"
+        app:layout_constraintStart_toStartOf="@+id/frameLayout13"
+        app:layout_constraintTop_toTopOf="@+id/frameLayout13"
+        app:srcCompat="@drawable/image3" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="167dp"
+        android:layout_height="132dp"
+        android:layout_marginTop="150dp"
+        app:layout_constraintEnd_toEndOf="@+id/frameLayout13"
+        app:layout_constraintTop_toTopOf="@+id/frameLayout13"
+        app:srcCompat="@drawable/image4" />
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="358dp"
+        android:layout_height="140dp"
+        android:layout_marginTop="300dp"
+        app:layout_constraintEnd_toEndOf="@+id/imageView6"
+        app:layout_constraintStart_toStartOf="@+id/imageView5"
+        app:layout_constraintTop_toTopOf="@+id/frameLayout13"
+        app:srcCompat="@drawable/image5" />
+
+    <FrameLayout
+        android:id="@+id/frameLayout13"
+        android:layout_width="359dp"
+        android:layout_height="440dp"
+        android:layout_marginTop="40dp"
+        app:layout_constraintEnd_toEndOf="@+id/frameLayout2"
+        app:layout_constraintStart_toStartOf="@+id/frameLayout2"
+        app:layout_constraintTop_toBottomOf="@+id/frameLayout2">
+
+    </FrameLayout>
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="167dp"
+        android:layout_height="132dp"
+        app:layout_constraintStart_toStartOf="@+id/imageView5"
+        app:layout_constraintTop_toTopOf="@+id/frameLayout13"
+        app:srcCompat="@drawable/image1" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
