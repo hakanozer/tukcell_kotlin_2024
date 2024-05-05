@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="mainActivityFunctions"
+            type="com.selincengiz.odev5.MainActivity" />
+    </data>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/top_container"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_25sdp"
+            android:layout_marginTop="@dimen/_80sdp"
+            android:layout_marginEnd="@dimen/_53sdp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/iv_profile"
+                android:layout_width="@dimen/_92sdp"
+                android:layout_height="@dimen/_92sdp"
+                android:scaleType="centerCrop"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/image_profile" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_marginVertical="@dimen/_1sdp"
+                android:layout_marginStart="@dimen/_18sdp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@id/iv_profile"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <TextView
+                    android:id="@+id/tv_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/gilroy_bold"
+                    android:text="Shane Richar"
+                    android:textColor="@color/title_color"
+                    android:textSize="@dimen/_21ssp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+
+                    />
+
+                <TextView
+                    android:id="@+id/tv_job"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_3sdp"
+                    android:alpha="0.4"
+                    android:fontFamily="@font/gilroy_medium"
+                    android:text="Photographer"
+                    android:textColor="@color/title_color"
+                    android:textSize="@dimen/_16ssp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/tv_name" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/_28sdp"
+                    android:layout_marginTop="@dimen/_12sdp"
+                    android:orientation="horizontal"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/tv_job">
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/btn_detail"
+                        android:layout_width="@dimen/_82sdp"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/button_detail"
+                        android:fontFamily="@font/inter_regular"
+                        android:onClick="@{()->mainActivityFunctions.detailButtonClicked()}"
+                        android:text="@string/detail"
+                        android:textAllCaps="false"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_14ssp">
+
+                    </androidx.appcompat.widget.AppCompatButton>
+
+                    <ImageButton
+                        android:layout_width="@dimen/_15sdp"
+                        android:layout_height="@dimen/_15sdp"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="@dimen/_6sdp"
+                        android:background="@null"
+                        android:src="@drawable/ic_direct">
+
+                    </ImageButton>
+
+
+                </LinearLayout>
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        <LinearLayout
+            android:id="@+id/middle_container"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_48sdp"
+            android:layout_marginStart="@dimen/_6sdp"
+            android:layout_marginTop="@dimen/_37sdp"
+            android:orientation="horizontal"
+            app:layout_constraintStart_toStartOf="@id/top_container"
+            app:layout_constraintTop_toBottomOf="@id/top_container">
+
+            <LinearLayout
+                android:id="@+id/photo_container"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/gilroy_medium"
+                    android:text="98"
+                    android:textColor="@color/title_color"
+                    android:textSize="@dimen/_21ssp">
+
+                </TextView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_1sdp"
+                    android:alpha="0.4"
+                    android:fontFamily="@font/gilroy_medium"
+                    android:text="@string/photo"
+                    android:textColor="@color/title_color"
+                    android:textSize="@dimen/_16ssp">
+
+                </TextView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/followers_container"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginStart="@dimen/_31sdp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/gilroy_medium"
+                    android:text="10k"
+                    android:textColor="@color/title_color"
+                    android:textSize="@dimen/_21ssp">
+
+                </TextView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_1sdp"
+                    android:alpha="0.4"
+                    android:fontFamily="@font/gilroy_medium"
+                    android:text="@string/followers"
+                    android:textColor="@color/title_color"
+                    android:textSize="@dimen/_16ssp">
+
+                </TextView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/following_container"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginStart="@dimen/_31sdp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/gilroy_medium"
+                    android:text="920"
+                    android:textColor="@color/title_color"
+                    android:textSize="@dimen/_21ssp">
+
+                </TextView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_1sdp"
+                    android:alpha="0.4"
+                    android:fontFamily="@font/gilroy_medium"
+                    android:text="@string/following"
+                    android:textColor="@color/title_color"
+                    android:textSize="@dimen/_16ssp">
+
+                </TextView>
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="@dimen/_129sdp"
+            android:layout_height="@dimen/_101sdp"
+            android:layout_marginTop="@dimen/_24sdp"
+            android:src="@drawable/image1"
+            app:layout_constraintStart_toStartOf="@+id/top_container"
+            app:layout_constraintTop_toBottomOf="@id/middle_container" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="@dimen/_129sdp"
+            android:layout_height="@dimen/_101sdp"
+            android:layout_marginStart="@dimen/_18sdp"
+            android:src="@drawable/image2"
+            app:layout_constraintStart_toEndOf="@id/imageView1"
+            app:layout_constraintTop_toTopOf="@+id/imageView1" />
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="@dimen/_129sdp"
+            android:layout_height="@dimen/_101sdp"
+            android:layout_marginTop="@dimen/_13sdp"
+            android:src="@drawable/image3"
+            app:layout_constraintStart_toStartOf="@+id/imageView1"
+            app:layout_constraintTop_toBottomOf="@+id/imageView1" />
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="@dimen/_129sdp"
+            android:layout_height="@dimen/_101sdp"
+            android:src="@drawable/image4"
+            app:layout_constraintStart_toStartOf="@+id/imageView2"
+            app:layout_constraintTop_toTopOf="@+id/imageView3" />
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_108sdp"
+            android:layout_marginTop="@dimen/_13sdp"
+            android:src="@drawable/image5"
+            app:layout_constraintEnd_toEndOf="@+id/imageView4"
+            app:layout_constraintStart_toStartOf="@+id/imageView3"
+            app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</layout>

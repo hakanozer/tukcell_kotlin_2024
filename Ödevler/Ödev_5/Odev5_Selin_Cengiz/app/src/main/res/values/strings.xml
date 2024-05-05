@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Odev5</string>
+    <string name="detail">Detail</string>
+    <string name="photo">Photo</string>
+    <string name="followers">Followers</string>
+    <string name="following">Following</string>
+    <string name="photography">#photography</string>
+    <string name="fashion">#fashion</string>
+    <string name="description">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical latin.</string>
+
+
+
+</resources>
