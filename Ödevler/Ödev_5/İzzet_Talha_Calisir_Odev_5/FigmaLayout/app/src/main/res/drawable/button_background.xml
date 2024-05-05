@@ -1,0 +1,16 @@
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Gölge -->
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="#999999" />
+            <corners android:radius="20dp" />
+        </shape>
+    </item>
+    <!-- Buton arka planı -->
+    <item android:top="4dp" android:right="4dp" android:left="4dp" android:bottom="60dp">
+        <shape android:shape="rectangle">
+            <solid android:color="#4F57FF" />
+            <corners android:radius="20dp" />
+        </shape>
+    </item>
+</layer-list>
