@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imgProfilePhoto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_profile_photo" />
+
+    <TextView
+        android:id="@+id/txtFollowing"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/gilroy_medium"
+        android:text="Following"
+        android:textColor="#999BB8"
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="@+id/txtFollowingCount"
+        app:layout_constraintTop_toBottomOf="@+id/txtFollowingCount" />
+
+    <TextView
+        android:id="@+id/txtFollowingCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="75dp"
+        android:fontFamily="@font/gilroy_medium"
+        android:text="920"
+        android:textSize="27dp"
+        app:layout_constraintStart_toEndOf="@+id/txtFollowerCount"
+        app:layout_constraintTop_toTopOf="@+id/txtFollowerCount" />
+
+    <Button
+        android:id="@+id/btnDetail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="#FF4F57FF"
+        android:fontFamily="@font/gilroy_regular"
+        android:text="Detail"
+        android:textColorLink="#FF4F57FF"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@+id/txtTitle"
+        app:layout_constraintTop_toBottomOf="@+id/txtTitle" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/post3"
+        app:layout_constraintTop_toBottomOf="@+id/img_post2"
+        app:srcCompat="@drawable/ic_post4" />
+
+    <TextView
+        android:id="@+id/txtPhoto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/gilroy_medium"
+        android:text="Photo"
+        android:textAlignment="viewStart"
+        android:textColor="#999BB8"
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="@+id/txtPhotoCount"
+        app:layout_constraintTop_toBottomOf="@+id/txtPhotoCount" />
+
+    <TextView
+        android:id="@+id/txtFollowerCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="75dp"
+        android:fontFamily="@font/gilroy_medium"
+        android:text="10k"
+        android:textSize="27dp"
+        app:layout_constraintStart_toEndOf="@+id/txtPhotoCount"
+        app:layout_constraintTop_toTopOf="@+id/txtPhotoCount" />
+
+    <TextView
+        android:id="@+id/txtFollowers"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/gilroy_medium"
+        android:text="Followers"
+        android:textColor="#999BB8"
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="@+id/txtFollowerCount"
+        app:layout_constraintTop_toBottomOf="@+id/txtFollowerCount" />
+
+    <TextView
+        android:id="@+id/txtTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/gilroy_medium"
+        android:text="Photographer"
+        android:textColor="#999BB8"
+        android:textColorLink="#FFFFFF"
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="@+id/txtProfileName"
+        app:layout_constraintTop_toBottomOf="@+id/txtProfileName" />
+
+    <ImageView
+        android:id="@+id/post3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        app:layout_constraintStart_toStartOf="@+id/img_post1"
+        app:layout_constraintTop_toBottomOf="@+id/img_post1"
+        app:srcCompat="@drawable/ic_post5" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/post3"
+        app:srcCompat="@drawable/ic_post3" />
+
+    <ImageView
+        android:id="@+id/btnShare"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        app:layout_constraintBottom_toBottomOf="@+id/btnDetail"
+        app:layout_constraintStart_toEndOf="@+id/btnDetail"
+        app:layout_constraintTop_toTopOf="@+id/btnDetail"
+        app:srcCompat="@drawable/vector" />
+
+    <TextView
+        android:id="@+id/txtProfileName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:fontFamily="@font/gilroy_bold"
+        android:text="Shane Richar"
+        android:textColor="#00044D"
+        android:textSize="27dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/imgProfilePhoto"
+        app:layout_constraintTop_toTopOf="@+id/imgProfilePhoto" />
+
+    <TextView
+        android:id="@+id/txtPhotoCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="35dp"
+        android:fontFamily="@font/gilroy_medium"
+        android:text="98"
+        android:textSize="27dp"
+        app:layout_constraintStart_toStartOf="@+id/imgProfilePhoto"
+        app:layout_constraintTop_toBottomOf="@+id/imgProfilePhoto" />
+
+    <ImageView
+        android:id="@+id/img_post1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtPhoto"
+        app:srcCompat="@drawable/ic_post1" />
+
+    <ImageView
+        android:id="@+id/img_post2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/img_post1"
+        app:layout_constraintTop_toTopOf="@+id/img_post1"
+        app:srcCompat="@drawable/ic_post2" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

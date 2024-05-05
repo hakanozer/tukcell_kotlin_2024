@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="primary">#00044D</color>
+    <color name="primary_transparent_0_4">#6600044D</color>
+    <color name="primary_transparent_0_5">#8000044D</color>
+    <color name="primary_transparent_0_64">#A300044D</color>
+    <color name="transparent">#00FFFFFF</color>
+    <color name="card_color">#F0F1F6</color>
+    <color name="button_color">#4F57FF</color>
+</resources>

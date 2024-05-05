@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetailActivity">
+
+    <ImageView
+        android:id="@+id/img_detail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_detail_photo" />
+
+    <TextView
+        android:id="@+id/txt_detail_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:fontFamily="@font/gilroy_medium"
+        android:text="Tanya Nguyen"
+        android:textAlignment="viewStart"
+        android:textColor="#00044D"
+        android:textSize="32dp"
+        android:textStyle="bold"
+        app:autoSizeMinTextSize="35dp"
+        app:layout_constraintStart_toStartOf="@+id/img_detail"
+        app:layout_constraintTop_toBottomOf="@+id/img_detail" />
+
+    <ImageView
+        android:id="@+id/ic_location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        app:layout_constraintStart_toStartOf="@+id/txt_detail_name"
+        app:layout_constraintTop_toBottomOf="@+id/txt_detail_name"
+        app:srcCompat="@drawable/ic_location" />
+
+    <TextView
+        android:id="@+id/txt_location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:fontFamily="@font/gilroy_medium"
+        android:text="London, UK"
+        android:textColor="#999BB8"
+        android:textSize="20dp"
+        app:layout_constraintStart_toEndOf="@+id/ic_location"
+        app:layout_constraintTop_toTopOf="@+id/ic_location" />
+
+    <ImageView
+        android:id="@+id/btn_like"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        app:layout_constraintStart_toStartOf="@+id/ic_location"
+        app:layout_constraintTop_toBottomOf="@+id/ic_location"
+        app:srcCompat="@drawable/ic_like" />
+
+    <ImageView
+        android:id="@+id/btn_comment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        app:layout_constraintEnd_toEndOf="@+id/txt_detail_name"
+        app:layout_constraintStart_toEndOf="@+id/btn_like"
+        app:layout_constraintTop_toTopOf="@+id/btn_like"
+        app:srcCompat="@drawable/ic_comment" />
+
+    <ImageView
+        android:id="@+id/btn_save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="180dp"
+        app:layout_constraintEnd_toEndOf="@+id/imageView"
+        app:layout_constraintStart_toEndOf="@+id/btn_comment"
+        app:layout_constraintTop_toTopOf="@+id/btn_comment"
+        app:srcCompat="@drawable/ic_save" />
+
+    <TextView
+        android:id="@+id/txt_bio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/gilroy_medium"
+        android:lineSpacingExtra="8dp"
+        android:maxWidth="350dp"
+        android:text="Contrary to popular belief, Lorem Ipsun is not simply random text. Its has roots in a piece of classical latin."
+        android:textAlignment="viewStart"
+        android:textAllCaps="false"
+        android:textColor="#8587AA"
+        android:textSize="18dp"
+        app:layout_constraintEnd_toEndOf="@+id/btn_save"
+        app:layout_constraintStart_toStartOf="@+id/btn_like"
+        app:layout_constraintTop_toBottomOf="@+id/btn_like" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_hashtag_photography"
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/button_background"
+        android:backgroundTint="#F0F1F6"
+        android:contextClickable="false"
+        android:text="#photograpy"
+        android:textAllCaps="false"
+        android:textColor="#5C5D8F"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="@+id/txt_bio"
+        app:layout_constraintTop_toBottomOf="@+id/txt_bio" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_hashtag_fashion"
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:layout_marginStart="10dp"
+        android:textSize="12sp"
+        android:textAllCaps="false"
+        android:backgroundTint="#F0F1F6"
+        android:text="#fashion"
+        android:textColor="#5C5D8F"
+        app:layout_constraintStart_toEndOf="@+id/btn_hashtag_photography"
+        app:layout_constraintTop_toTopOf="@+id/btn_hashtag_photography"
+        android:background="@drawable/button_background"/>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="35dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/txt_detail_name"
+        app:srcCompat="@drawable/cloud_download_button" />
+</androidx.constraintlayout.widget.ConstraintLayout>

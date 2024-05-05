@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:minWidth="414dp"
+    android:minHeight="896dp"
+    tools:context=".DetailActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="410dp"
+        android:layout_height="410dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/big_profile_pic" />
+
+    <FrameLayout
+        android:id="@+id/frameLayout10"
+        android:layout_width="350dp"
+        android:layout_height="28dp"
+        android:layout_marginTop="25dp"
+        app:layout_constraintEnd_toEndOf="@+id/frameLayout12"
+        app:layout_constraintStart_toStartOf="@+id/frameLayout12"
+        app:layout_constraintTop_toBottomOf="@+id/frameLayout12">
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/frameLayout9"
+        android:layout_width="80dp"
+        android:layout_height="28dp"
+        app:layout_constraintStart_toStartOf="@+id/frameLayout10"
+        app:layout_constraintTop_toTopOf="@+id/frameLayout10">
+
+    </FrameLayout>
+
+    <ImageButton
+        android:id="@+id/btnHeart"
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        android:background="#00FFFFFF"
+        app:layout_constraintStart_toStartOf="@+id/frameLayout9"
+        app:layout_constraintTop_toTopOf="@+id/frameLayout9"
+        app:srcCompat="@drawable/ic_heart" />
+
+    <ImageButton
+        android:id="@+id/btnComment"
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="52dp"
+        android:background="#00FFFFFF"
+        app:layout_constraintStart_toStartOf="@+id/frameLayout9"
+        app:layout_constraintTop_toTopOf="@+id/frameLayout9"
+        app:srcCompat="@drawable/ic_comment" />
+
+    <ImageButton
+        android:id="@+id/btnBookmark"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="322dp"
+        android:background="#00FFFFFF"
+        app:layout_constraintStart_toStartOf="@+id/frameLayout10"
+        app:layout_constraintTop_toTopOf="@+id/frameLayout10"
+        app:srcCompat="@drawable/ic_bookmark" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="345dp"
+        android:layout_height="96dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="5dp"
+        android:fontFamily="@font/inter"
+        android:text="Contrary to popular belief, Lorem Ipsum  is not simply random text. It has roots in  a piece of classical latin."
+        android:textColor="#8000044D"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@+id/frameLayout10"
+        app:layout_constraintStart_toStartOf="@+id/frameLayout10"
+        app:layout_constraintTop_toBottomOf="@+id/frameLayout10"
+        app:lineHeight="32dp" />
+
+    <FrameLayout
+        android:id="@+id/frameLayout11"
+        android:layout_width="258dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toStartOf="@+id/textView11"
+        app:layout_constraintTop_toBottomOf="@+id/textView11">
+
+    </FrameLayout>
+
+    <Button
+        android:id="@+id/btnPhotograpghyTag"
+        android:layout_width="144dp"
+        android:layout_height="36dp"
+        android:background="@drawable/round_btn_tag"
+        android:fontFamily="@font/gilroy_medium"
+        android:text="#photography"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textColor="#00044D"
+        app:layout_constraintStart_toStartOf="@+id/frameLayout11"
+        app:layout_constraintTop_toTopOf="@+id/frameLayout11" />
+
+    <Button
+        android:id="@+id/btnFashionTag"
+        android:layout_width="106dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="152dp"
+        android:background="@drawable/round_btn_tag"
+        android:fontFamily="@font/gilroy_medium"
+        android:text="#fashion"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textColor="#00044D"
+        app:layout_constraintStart_toStartOf="@+id/frameLayout11"
+        app:layout_constraintTop_toTopOf="@+id/frameLayout11" />
+
+    <FrameLayout
+        android:id="@+id/frameLayout12"
+        android:layout_width="340dp"
+        android:layout_height="96dp"
+        android:layout_marginTop="25dp"
+        app:layout_constraintEnd_toEndOf="@+id/imageView"
+        app:layout_constraintStart_toStartOf="@+id/imageView"
+        app:layout_constraintTop_toBottomOf="@+id/imageView">
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/frameLayout14"
+        android:layout_width="142dp"
+        android:layout_height="28dp"
+        app:layout_constraintBottom_toBottomOf="@+id/frameLayout12"
+        app:layout_constraintStart_toStartOf="@+id/frameLayout12">
+
+    </FrameLayout>
+
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        app:layout_constraintBottom_toBottomOf="@+id/frameLayout14"
+        app:layout_constraintStart_toStartOf="@+id/frameLayout14"
+        app:layout_constraintTop_toTopOf="@+id/frameLayout14"
+        app:srcCompat="@drawable/ic_location" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="106dp"
+        android:layout_height="28dp"
+        android:fontFamily="@font/gilroy_medium"
+        android:text="London, UK"
+        android:textColor="#6600044D"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/frameLayout14"
+        app:layout_constraintTop_toTopOf="@+id/frameLayout14" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="211dp"
+        android:layout_height="40dp"
+        android:fontFamily="@font/gilroy_bold"
+        android:text="Tanya Nguyen"
+        android:textColor="#00044D"
+        android:textSize="32sp"
+        app:layout_constraintStart_toStartOf="@+id/frameLayout12"
+        app:layout_constraintTop_toTopOf="@+id/frameLayout12" />
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#00FFFFFF"
+        app:layout_constraintBottom_toBottomOf="@+id/frameLayout12"
+        app:layout_constraintEnd_toEndOf="@+id/frameLayout12"
+        app:layout_constraintTop_toTopOf="@+id/frameLayout12"
+        app:srcCompat="@drawable/download_btn" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
