@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+    <dimen name="icon_width">60dp</dimen>
+    <dimen name="icon_height">60dp</dimen>
+
+    <dimen name="icon_margin_size">5dp</dimen>
+
+    <dimen name="feature_title_size">23sp</dimen>
+    <dimen name="feature_explanation_size">18sp</dimen>
+    <dimen name="feature_ratio_size">24sp</dimen>
+
+    <dimen name="text_marginLeft">5dp</dimen>
+    <dimen name="text_marginRight">5dp</dimen>
+    
+    <dimen name="follow_num_text_size"> 20sp</dimen>
+    <dimen name="follow_margin"> 50dp</dimen>
+    <dimen name="follow_exp_text_size"> 16sp</dimen>
+
+
+
+
+</resources>
