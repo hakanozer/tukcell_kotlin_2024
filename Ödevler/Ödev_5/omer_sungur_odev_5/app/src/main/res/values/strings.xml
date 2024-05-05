@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Odev-5</string>
+    <string name="fashion">#fashion</string>
+    <string name="photography">#photography</string>
+    <string name="lorem_ipsum">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical latin.</string>
+    <string name="london_uk">London, UK</string>
+    <string name="tanya_nguen">Tanya Nguen</string>
+</resources>
