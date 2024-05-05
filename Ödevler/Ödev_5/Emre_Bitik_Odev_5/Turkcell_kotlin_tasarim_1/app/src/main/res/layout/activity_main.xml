@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--suppress ALL -->
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="313.28dp"
+        android:layout_height="120dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="40dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="169.28dp"
+            android:layout_height="116dp"
+            android:layout_marginStart="144dp"
+            android:layout_marginTop="1dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+
+                android:id="@+id/textView"
+                android:layout_width="166dp"
+                android:layout_height="32dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:fontFamily="sans-serif-black"
+                android:gravity="top"
+                android:lineSpacingExtra="0sp"
+                android:text="@string/shane_richa"
+                android:textAppearance="@style/shane_richa"
+                android:translationY="-0.18sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="134dp"
+                android:layout_height="28dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:alpha="0.4"
+                android:fontFamily="@font/abril_fatface"
+                android:gravity="top"
+                android:lineSpacingExtra="5sp"
+                android:text="@string/photographe"
+                android:textAppearance="@style/photographe"
+                android:translationY="-2.28sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+            <LinearLayout
+                android:layout_width="146.28dp"
+                android:layout_height="36dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="6dp"
+                android:orientation="horizontal"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView2">
+
+                <Button
+                    android:id="@+id/btnDetail"
+                    android:layout_width="106dp"
+                    android:layout_height="36dp"
+                    android:backgroundTint="#4F57FF"
+                    android:text="Detail"
+                    android:textAlignment="center"
+                    android:textColorLink="#000000"
+                    tools:ignore="TouchTargetSizeCheck" />
+
+                <ImageView
+                    android:id="@+id/imageView2"
+                    android:layout_width="20dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="4dp"
+                    android:elevation="4dp"
+                    app:srcCompat="@drawable/vector" />
+            </LinearLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/profile" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout2"
+        android:layout_width="311dp"
+        android:layout_height="62dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="220dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="55dp"
+            android:layout_height="62dp"
+            android:orientation="vertical"
+            tools:layout_editor_absoluteX="1dp"
+            tools:layout_editor_absoluteY="1dp">
+
+            <TextView
+                android:id="@+id/some_id"
+                android:layout_width="43dp"
+                android:layout_height="32dp"
+                android:gravity="top"
+                android:lineSpacingExtra="0sp"
+                android:text="@string/some_id"
+                android:textAppearance="@style/some_id"
+                android:translationY="-0.18sp" />
+
+            <TextView
+                android:id="@+id/photo"
+                android:layout_width="55dp"
+                android:layout_height="28dp"
+                android:alpha="0.4"
+                android:gravity="top"
+                android:lineSpacingExtra="5sp"
+                android:text="@string/photo"
+                android:textAppearance="@style/photo"
+                android:translationY="-2.28sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="97dp"
+            android:layout_height="62dp"
+            android:layout_marginStart="25dp"
+            android:orientation="vertical"
+            app:layout_constraintStart_toEndOf="@+id/linearLayout"
+            tools:layout_editor_absoluteY="1dp">
+
+            <TextView
+                android:id="@+id/k"
+                android:layout_width="70dp"
+                android:layout_height="32dp"
+                android:gravity="top"
+                android:lineSpacingExtra="0sp"
+                android:text="@string/k"
+                android:textAppearance="@style/k"
+                android:translationY="-0.18sp" />
+
+            <TextView
+                android:id="@+id/followers"
+                android:layout_width="110dp"
+                android:layout_height="28dp"
+                android:alpha="0.4"
+                android:gravity="top"
+                android:lineSpacingExtra="5sp"
+                android:text="@string/followers"
+                android:textAppearance="@style/followers"
+                android:translationY="-2.28sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="115dp"
+            android:layout_height="62dp"
+            android:layout_marginStart="25dp"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toEndOf="@+id/linearLayout2"
+            tools:layout_editor_absoluteY="1dp">
+
+            <TextView
+                android:id="@+id/some_id"
+                android:layout_width="46dp"
+                android:layout_height="32dp"
+                android:gravity="top"
+                android:lineSpacingExtra="0sp"
+                android:text="@string/some_id2"
+                android:textAppearance="@style/some_id2"
+                android:translationY="-0.18sp" />
+
+            <TextView
+                android:id="@+id/following"
+                android:layout_width="89dp"
+                android:layout_height="28dp"
+                android:alpha="0.4"
+                android:gravity="top"
+                android:lineSpacingExtra="5sp"
+                android:text="@string/following"
+                android:textAppearance="@style/following"
+                android:translationY="-2.28sp" />
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="167dp"
+        android:layout_height="132dp"
+        android:layout_marginStart="223dp"
+        android:layout_marginTop="310dp"
+        android:layout_marginEnd="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/rectangle_61" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="167dp"
+        android:layout_height="132dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="310dp"
+        android:layout_marginEnd="24dp"
+        app:layout_constraintEnd_toStartOf="@+id/imageView4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/rectangle_48" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="167dp"
+        android:layout_height="132dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="460dp"
+        android:layout_marginEnd="24dp"
+        app:layout_constraintEnd_toStartOf="@+id/imageView6"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/rectangle_62" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="167dp"
+        android:layout_height="132dp"
+        android:layout_marginStart="223dp"
+        android:layout_marginTop="460dp"
+        android:layout_marginEnd="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/rectangle_63" />
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="606dp"
+        android:layout_marginEnd="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/rectangle_64" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetailActivity">
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="0dp"
+        android:layout_height="405dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/rectangle_65" />
+
+    <TextView
+        android:id="@+id/tanya_nguye"
+        android:layout_width="211dp"
+        android:layout_height="40dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="441dp"
+        android:gravity="top"
+        android:lineSpacingExtra="2sp"
+        android:text="@string/tanya_nguye"
+        android:textAppearance="@style/tanya_nguye"
+        android:translationY="-1.25sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="142dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="489dp"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imageView9"
+            android:layout_width="18dp"
+            android:layout_height="28dp"
+            android:layout_weight="0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/map_pin__1__1" />
+
+        <TextView
+            android:id="@+id/london_uk"
+            android:layout_width="108dp"
+            android:layout_height="27dp"
+            android:layout_marginStart="15dp"
+            android:alpha="0.48"
+            android:gravity="top"
+            android:lineSpacingExtra="5sp"
+            android:text="@string/london_uk"
+            android:textAppearance="@style/london_uk"
+            app:layout_constraintStart_toEndOf="@+id/imageView9" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imageView10"
+        android:layout_width="105dp"
+        android:layout_height="114dp"
+        android:layout_marginStart="288dp"
+        android:layout_marginTop="440dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/rectangle_5" />
+
+    <ImageView
+        android:id="@+id/imageView11"
+        android:layout_width="16dp"
+        android:layout_height="18dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="40dp"
+        app:layout_constraintEnd_toEndOf="@+id/imageView10"
+        app:layout_constraintTop_toTopOf="@+id/imageView10"
+        app:srcCompat="@drawable/download_cloud_1" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout4"
+        android:layout_width="345dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="552dp"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/heart_1_2"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:src="@drawable/heart__1__2"
+                tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+            <ImageButton
+                android:id="@+id/message_cir"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="20dp"
+                android:alpha="0.64"
+                app:srcCompat="@drawable/message_circle_1"
+                tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+        </LinearLayout>
+
+        <ImageButton
+            android:id="@+id/bookmark_1"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_marginStart="240dp"
+            android:alpha="0.64"
+            android:src="@drawable/vector__1_"
+            tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/contrary_to"
+        android:layout_width="345dp"
+        android:layout_height="96dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="590dp"
+        android:gravity="top"
+        android:lineSpacingExtra="10sp"
+        android:text="@string/contrary_to"
+        android:textAppearance="@style/contrary_to"
+        android:translationY="-5.11sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:layout_width="268dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="712dp"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView8">
+
+        <ImageView
+            android:id="@+id/imageView12"
+            android:layout_width="144dp"
+            android:layout_height="32dp"
+            app:srcCompat="@drawable/frame_15" />
+
+        <ImageView
+            android:id="@+id/imageView13"
+            android:layout_width="106dp"
+            android:layout_height="32dp"
+            android:layout_marginLeft="10dp"
+            app:srcCompat="@drawable/frame_16" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

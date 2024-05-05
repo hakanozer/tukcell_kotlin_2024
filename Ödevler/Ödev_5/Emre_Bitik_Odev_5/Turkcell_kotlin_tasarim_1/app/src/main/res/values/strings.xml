@@ -1,0 +1,40 @@
+<resources>
+    <string name="app_name">Turkcell_kotlin_tasarim_1</string>
+    <!-- strings.xml -->
+    <string name="shane_richa">
+Shane Richar
+</string>
+    <!-- strings.xml -->
+    <string name="photographe">
+Photographer
+</string>
+    <!-- strings.xml -->
+    <string name="some_id">
+98
+</string>
+    <string name="photo">
+Photo
+</string>
+    <string name="k">
+10k
+</string>
+
+    <string name="followers">
+Followers
+</string>
+    <string name="some_id2">
+920
+</string>
+    <string name="following">
+Following
+</string>
+
+    <string name="tanya_nguye">
+Tanya Nguyen
+</string>
+    <string name="london_uk">
+London, UK
+</string>
+    <string name="contrary_to">
+Contrary to popular belief, Lorem Ipsum \nis not simply random text. It has roots in \na piece of classical latin.
+</string></resources>
