@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="detailFunctions"
+            type="com.selincengiz.selin_cengiz_vize_2.presentation.DetailActivity" />
+
+    </data>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".presentation.DetailActivity">
+
+        <com.tistory.zladnrms.roundablelayout.RoundableLayout
+            android:id="@+id/roundableLayout"
+            android:layout_width="@dimen/_30sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_40sdp"
+            android:alpha="0.8"
+            app:cornerAll="@dimen/_10sdp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/detail_background"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+            </ImageView>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/back_button"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/ic_back"
+                android:onClick="@{()-> detailFunctions.backClicked()}"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </com.tistory.zladnrms.roundablelayout.RoundableLayout>
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/newyork_small"
+            android:text="@string/detail"
+            android:textColor="@color/redBlack"
+            android:textSize="@dimen/_22ssp"
+            android:textStyle="bold"
+            android:layout_marginStart="@dimen/_20sdp"
+            app:layout_constraintBottom_toBottomOf="@+id/roundableLayout"
+            app:layout_constraintStart_toEndOf="@+id/roundableLayout"
+            app:layout_constraintTop_toTopOf="@+id/roundableLayout">
+
+
+        </TextView>
+
+        <TextView
+           android:id="@+id/common"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_30sdp"
+            android:text="Common:"
+            android:textStyle="bold"
+            android:textSize="@dimen/_20ssp"
+            app:layout_constraintStart_toStartOf="@+id/roundableLayout"
+            app:layout_constraintTop_toBottomOf="@+id/roundableLayout" />
+        <TextView
+            android:id="@+id/tv_common"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_30sdp"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:text="dsfdafdafdfadf"
+            android:textSize="@dimen/_18ssp"
+            app:layout_constraintStart_toEndOf="@+id/common"
+            app:layout_constraintTop_toBottomOf="@+id/roundableLayout" />
+
+        <TextView
+            android:id="@+id/botanical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_30sdp"
+            android:text="Botanical:"
+            android:textStyle="bold"
+            android:textSize="@dimen/_20ssp"
+            app:layout_constraintStart_toStartOf="@+id/roundableLayout"
+            app:layout_constraintTop_toBottomOf="@+id/tv_common" />
+        <TextView
+            android:id="@+id/tv_botanical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_30sdp"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:text="dsfdafdafdfadf"
+            android:textSize="@dimen/_18ssp"
+            app:layout_constraintStart_toEndOf="@+id/botanical"
+            app:layout_constraintTop_toBottomOf="@+id/tv_common" />
+
+        <TextView
+            android:id="@+id/tv_zone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_30sdp"
+            android:text="dsfdafdafdfadf"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:textSize="@dimen/_18ssp"
+            app:layout_constraintStart_toEndOf="@+id/zone"
+            app:layout_constraintTop_toBottomOf="@+id/tv_botanical" />
+
+        <TextView
+            android:id="@+id/zone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_30sdp"
+            android:text="Zone:"
+            android:textSize="@dimen/_20ssp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/roundableLayout"
+            app:layout_constraintTop_toBottomOf="@+id/tv_botanical" />
+
+        <TextView
+            android:id="@+id/tv_light"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_30sdp"
+            android:text="dsfdafdafdfadf"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:textSize="@dimen/_18ssp"
+            app:layout_constraintStart_toEndOf="@+id/light"
+            app:layout_constraintTop_toBottomOf="@+id/tv_zone" />
+
+        <TextView
+            android:id="@+id/light"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_30sdp"
+            android:text="Light:"
+            android:textSize="@dimen/_20ssp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/roundableLayout"
+            app:layout_constraintTop_toBottomOf="@+id/tv_zone" />
+
+        <TextView
+            android:id="@+id/tv_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_30sdp"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:text="dsfdafdafdfadf"
+            android:textSize="@dimen/_18ssp"
+            app:layout_constraintStart_toEndOf="@+id/price"
+            app:layout_constraintTop_toBottomOf="@+id/tv_light" />
+
+        <TextView
+            android:id="@+id/price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_30sdp"
+            android:text="Price:"
+            android:textSize="@dimen/_20ssp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/roundableLayout"
+            app:layout_constraintTop_toBottomOf="@+id/tv_light" />
+
+        <TextView
+            android:id="@+id/tv_availability"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_30sdp"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:text="dsfdafdafdfadf"
+            android:textSize="@dimen/_18ssp"
+            app:layout_constraintStart_toEndOf="@+id/availability"
+            app:layout_constraintTop_toBottomOf="@+id/tv_price" />
+
+        <TextView
+            android:id="@+id/availability"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_30sdp"
+            android:text="Availability:"
+            android:textSize="@dimen/_20ssp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/roundableLayout"
+            app:layout_constraintTop_toBottomOf="@+id/tv_price" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</layout>

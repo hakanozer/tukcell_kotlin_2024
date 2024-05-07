@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="mainFunctions"
+            type="com.selincengiz.selin_cengiz_vize_2.presentation.MainActivity" />
+    </data>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".presentation.MainActivity">
+
+        <SearchView
+            android:id="@+id/search_view"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_45sdp"
+            android:layout_margin="@dimen/_14sdp"
+            android:alpha="0.5"
+            android:background="@drawable/searchview_background"
+            android:iconifiedByDefault="false"
+            android:paddingStart="@dimen/_6sdp"
+            android:queryBackground="@null"
+            android:queryHint="@string/searchview_hint"
+            android:searchHintIcon="@null"
+            android:searchIcon="@drawable/ic_search"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+
+        </SearchView>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_search"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_marginTop="@dimen/_30sdp"
+            android:background="@drawable/button_background"
+            android:ems="4"
+            android:fontFamily="@font/mulish_semibold"
+            android:onClick="@{()-> mainFunctions.searchClicked()}"
+            android:text="@string/search"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_18ssp"
+            app:layout_constraintEnd_toEndOf="@+id/search_view"
+            app:layout_constraintTop_toBottomOf="@+id/search_view" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_detail"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_45sdp"
+            android:layout_marginTop="@dimen/_30sdp"
+            android:background="@drawable/button_background"
+            android:fontFamily="@font/mulish_semibold"
+            android:onClick="@{()-> mainFunctions.detailClicked()}"
+            android:text="@string/btn_detail"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_18ssp"
+            app:layout_constraintEnd_toEndOf="@+id/search_view"
+            app:layout_constraintStart_toStartOf="@+id/search_view"
+            app:layout_constraintTop_toBottomOf="@+id/btn_search" />
+
+        <TextView
+            android:id="@+id/tv_number_search"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/_20sdp"
+            android:layout_marginBottom="@dimen/_20sdp"
+            android:fontFamily="@font/mulish_semibold"
+            android:textSize="@dimen/_18ssp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:text="Bulunan: 1" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>
