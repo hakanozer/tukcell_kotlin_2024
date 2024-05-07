@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Detail">
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Detay"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.303"
+        app:layout_constraintStart_toEndOf="@+id/btn_back"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.gridlayout.widget.GridLayout
+        android:layout_width="385dp"
+        android:layout_height="232dp"
+        android:layout_centerInParent="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="72dp"
+        app:columnCount="2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:rowCount="3">
+
+        <TextView
+            android:id="@+id/text_common"
+            android:layout_width="169dp"
+            android:layout_height="77dp"
+            android:layout_marginStart="0dp"
+            android:text="Common"
+            android:textSize="18sp"
+            app:layout_column="0"
+            app:layout_row="0" />
+
+        <TextView
+            android:id="@+id/text_botanical"
+            android:layout_width="169dp"
+            android:layout_height="77dp"
+            android:layout_marginStart="25dp"
+            android:text="Botanical"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/text_zone"
+            android:layout_width="169dp"
+            android:layout_height="77dp"
+            android:layout_marginStart="0dp"
+            android:text="Zone"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/text_light"
+            android:layout_width="169dp"
+            android:layout_height="78dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginEnd="24dp"
+            android:text="Light"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/text_price"
+            android:layout_width="169dp"
+            android:layout_height="77dp"
+            android:layout_marginStart="0dp"
+            android:text="Price"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/text_availability"
+            android:layout_width="169dp"
+            android:layout_height="77dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginEnd="24dp"
+            android:text="Availability"
+            android:textSize="18sp" />
+    </androidx.gridlayout.widget.GridLayout>
+
+    <ImageButton
+        android:id="@+id/btn_back"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="28dp"
+        android:background="@color/white"
+        android:scaleType="centerCrop"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_back" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
