@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Vize2</string>
+    <string name="best_plant_searcher">Best Plant Searcher</string>
+    <string name="search">Search</string>
+    <string name="search_your_plant">Search Your Plant</string>
+    <string name="number_of_found">Number of Found:</string>
+    <string name="show_details">Show Details</string>
+    <string name="details">Details</string>
+    <string name="common">Common</string>
+    <string name="botanical">Botanical</string>
+    <string name="zone">Zone</string>
+    <string name="light">Light</string>
+    <string name="price">Price</string>
+    <string name="availability">Availability</string>
+</resources>
