@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/item_google"
+        android:icon="@drawable/google_icon"
+        android:title="Google" />
+    <item
+        android:id="@+id/item_instagram"
+        android:icon="@drawable/instagram_icon"
+        android:title="Instagram" />
+    <item
+        android:id="@+id/item_facebook"
+        android:icon="@drawable/facebook_icon"
+        android:title="Facebook" />
+</menu>
