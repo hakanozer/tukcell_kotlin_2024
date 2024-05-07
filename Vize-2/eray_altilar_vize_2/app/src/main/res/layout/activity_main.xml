@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/input_search"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:ems="15"
+        android:hint="Arama.."
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btn_search"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="ARA"
+        app:layout_constraintEnd_toEndOf="@+id/input_search"
+        app:layout_constraintTop_toBottomOf="@+id/input_search" />
+
+    <Button
+        android:id="@+id/btn_detail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="20"
+        android:text="DETAY GOSTER"
+        app:layout_constraintEnd_toEndOf="@+id/input_search"
+        app:layout_constraintStart_toStartOf="@+id/input_search"
+        app:layout_constraintTop_toBottomOf="@+id/btn_search" />
+
+    <TextView
+        android:id="@+id/txt_result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="Bulunan"
+        android:textSize="25sp"
+        app:layout_constraintStart_toStartOf="@+id/btn_detail"
+        app:layout_constraintTop_toBottomOf="@+id/btn_detail" />
+
+    <TextView
+        android:id="@+id/txt_result_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="@+id/btn_detail"
+        app:layout_constraintTop_toTopOf="@+id/txt_result" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

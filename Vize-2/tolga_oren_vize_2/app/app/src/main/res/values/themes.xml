@@ -1,0 +1,10 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.Vize2" parent="Theme.Material3.DayNight">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <item name="colorPrimary">@color/primary</item> <!-- ActionBar rengini belirleyin -->
+    </style>
+
+    <style name="Theme.Vize2" parent="Base.Theme.Vize2" />
+</resources>

@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">selin_cengiz_vize_2</string>
+    <string name="searchview_hint">Search plants..</string>
+    <string name="search">Search</string>
+    <string name="detail">Detail</string>
+    <string name="btn_detail">Go to Detail -></string>
+</resources>
