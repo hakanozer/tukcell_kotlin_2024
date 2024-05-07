@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetailActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="631dp"
+        android:layout_height="1157dp"
+        app:srcCompat="@drawable/background"
+        tools:layout_editor_absoluteX="-183dp"
+        tools:layout_editor_absoluteY="-235dp" />
+
+    <TextView
+        android:id="@+id/detailtextview"
+        android:layout_width="437dp"
+        android:layout_height="35dp"
+        android:text="Sonuçlar.."
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textSize="20sp"
+        tools:layout_editor_absoluteX="-2dp"
+        tools:layout_editor_absoluteY="105dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
