@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">omer_sungur_vize_2</string>
+    <string name="common_text">Common: %1$s</string>
+    <string name="botanical_text">Botanical: %1$s</string>
+    <string name="zone_text">Zone: %1$s</string>
+    <string name="light_text">Light: %1$s</string>
+    <string name="price_text">Price: %1$s</string>
+    <string name="availability_text">Availability: %1$s</string>
+    <string name="plant_app">Plant App</string>
+    <string name="search">Search</string>
+    <string name="search_tv">Search</string>
+    <string name="show_detail">Show Detail</string>
+    <string name="founded">Founded:</string>
+    <string name="founded_plants">Founded Plants:</string>
+    <string name="follow_us">Follow Us</string>
+    <string name="google">Google</string>
+    <string name="instagram">Instagram</string>
+    <string name="facebook">Facebook</string>
+    <string name="details">Details</string>
+    <string name="common">Common:</string>
+    <string name="botanical">Botanical:</string>
+    <string name="zone">Zone:</string>
+    <string name="light">Light:</string>
+    <string name="price">Price:</string>
+    <string name="availability">Availability:</string>
+</resources>
