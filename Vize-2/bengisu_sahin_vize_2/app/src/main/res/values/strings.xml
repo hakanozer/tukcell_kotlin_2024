@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Bengisu_Sahin_Vize02</string>
+    <string name="textview">TextView</string>
+    <string name="detay">Detay</string>
+    <string name="ara">Ara</string>
+    <string name="detay_g_ster">Detay Göster</string>
+    <string name="bulunan">Bulunan :</string>
+    <string name="bos">" "</string>
+</resources>

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetailActivity">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="380dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/alice"
+        android:text="Bulunan İlk Bitkinin Özellikleri"
+        android:textAlignment="center"
+        android:textColor="#FF0000"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewCommon"
+        android:layout_width="340dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/alice"
+        android:textAlignment="viewStart"
+        android:textColor="#3F51B5"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/textView2"
+        app:layout_constraintStart_toStartOf="@+id/textView2"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <TextView
+        android:id="@+id/textViewBotanical"
+        android:layout_width="340dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/alice"
+        android:textColor="#3F51B5"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/textViewCommon"
+        app:layout_constraintStart_toStartOf="@+id/textViewCommon"
+        app:layout_constraintTop_toBottomOf="@+id/textViewCommon" />
+
+    <TextView
+        android:id="@+id/textViewZone"
+        android:layout_width="340dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/alice"
+        android:textColor="#3F51B5"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/textViewBotanical"
+        app:layout_constraintStart_toStartOf="@+id/textViewBotanical"
+        app:layout_constraintTop_toBottomOf="@+id/textViewBotanical" />
+
+    <TextView
+        android:id="@+id/textViewLight"
+        android:layout_width="340dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/alice"
+        android:textColor="#3F51B5"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/textViewZone"
+        app:layout_constraintStart_toStartOf="@+id/textViewZone"
+        app:layout_constraintTop_toBottomOf="@+id/textViewZone" />
+
+    <TextView
+        android:id="@+id/textViewPrice"
+        android:layout_width="340dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/alice"
+        android:textColor="#3F51B5"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/textViewLight"
+        app:layout_constraintStart_toStartOf="@+id/textViewLight"
+        app:layout_constraintTop_toBottomOf="@+id/textViewLight" />
+
+    <TextView
+        android:id="@+id/textViewAvailability"
+        android:layout_width="340dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/alice"
+        android:textColor="#3F51B5"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/textViewPrice"
+        app:layout_constraintStart_toStartOf="@+id/textViewPrice"
+        app:layout_constraintTop_toBottomOf="@+id/textViewPrice" />
+</androidx.constraintlayout.widget.ConstraintLayout>
