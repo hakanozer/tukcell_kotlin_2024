@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#B67088"
+    android:backgroundTint="#FFFFFF"
+    tools:context=".MainActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="409dp"
+        android:layout_height="726dp"
+        tools:layout_editor_absoluteX="2dp"
+        tools:layout_editor_absoluteY="2dp">
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="413dp"
+            android:layout_height="565dp"
+            app:srcCompat="@drawable/background"
+            tools:layout_editor_absoluteX="-2dp"
+            tools:layout_editor_absoluteY="-4dp" />
+
+        <Button
+            android:id="@+id/searchButton"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:backgroundTint="#A489D5"
+            android:text="Ara"
+            tools:layout_editor_absoluteX="293dp"
+            tools:layout_editor_absoluteY="196dp" />
+
+        <TextView
+            android:id="@+id/searchedittext"
+            android:layout_width="266dp"
+            android:layout_height="40dp"
+            android:background="#9E6A7B"
+            android:backgroundTint="#A489D5"
+            android:fontFamily="casual"
+            android:hint="Arama yapın..."
+            android:imeOptions="actionSearch"
+            android:inputType="text"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            tools:layout_editor_absoluteX="65dp"
+            tools:layout_editor_absoluteY="93dp" />
+
+        <TextView
+            android:id="@+id/counterTextView"
+            android:layout_width="152dp"
+            android:layout_height="38dp"
+            android:background="#9C27B0"
+            android:backgroundTint="#A489D5"
+            android:text=""
+            tools:layout_editor_absoluteX="22dp"
+            tools:layout_editor_absoluteY="341dp" />
+
+        <Button
+            android:id="@+id/showDetailButton"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:backgroundTint="#A489D5"
+            android:text="Detayları Göster"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="196dp" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
