@@ -21,7 +21,7 @@ class DetailsActivity : AppCompatActivity() {
     private lateinit var userBackButton: Button
 
     companion object {
-        var plant: Plant? = null
+        var compPlant: Plant? = null
     }
 
 
@@ -44,16 +44,17 @@ class DetailsActivity : AppCompatActivity() {
         userBackButton = findViewById(R.id.backButton)
 
 
-        if (plant != null) {
-            usertCommonTxt.text = "COMMON:" + plant!!.common
-            userBotanicalTxt.text = "BOTANICAL:" + plant!!.botanical
-            usertxtZone.text = "ZONE:" + plant!!.zone.toString()
-            userLightTxt.text = "LIGHT:" + plant!!.light
-            userPriceTxt.text = "PRICE:" + plant!!.price
-            txtAvailability.text = "AVAILABILITY:" + plant!!.availability
+        if (compPlant != null) {
+            usertCommonTxt.text = "COMMON:" + compPlant!!.common
+            userBotanicalTxt.text = "BOTANICAL:" + compPlant!!.botanical
+            usertxtZone.text = "ZONE:" + compPlant!!.zone.toString()
+            userLightTxt.text = "LIGHT:" + compPlant!!.light
+            userPriceTxt.text = "PRICE:" + compPlant!!.price
+            txtAvailability.text = "AVAILABILITY:" + compPlant!!.availability
         }
         userBackButton.setOnClickListener {
             onBackPressed()
         }
+
     }
 }

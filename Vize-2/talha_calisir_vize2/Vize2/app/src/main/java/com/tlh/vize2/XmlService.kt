@@ -6,7 +6,7 @@ import org.jsoup.parser.Parser
 
 class XmlService {
 
-    fun xmlSearch(key:String): List<Plant> {
+    fun xmlLoad(): List<Plant> {
         val listPlant= mutableListOf<Plant>()
         try {
             val url="https://www.w3schools.com/xml/plant_catalog.xml"
@@ -21,21 +21,18 @@ class XmlService {
                 val price=item.getElementsByTag("PRICE").text()
                 val availability=item.getElementsByTag("AVAILABILITY").text()
 
-                val dataObject=Plant(common,botanical,zone,light,price,availability)
-                listPlant.add(dataObject)
-
+                val result=Plant(common,botanical,zone,light,price,availability)
+                listPlant.add(result)
 
             }
-
         }
         catch (ex:Exception){
             Log.e("xmlLoad", ex.message.toString() )
         }
-        return listPlant.filter { plants ->
-            plants.common.contains(key)&&key.isNotEmpty()
+        return listPlant
 
         }
 
     }
 
-}
+
