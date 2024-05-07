@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/action_common"
+        android:title="Item" />
+    <item
+        android:id="@+id/action_zone"
+        android:title="Item" />
+    <item
+        android:id="@+id/action_price"
+        android:title="Item" />
+    <item
+        android:id="@+id/action_botanical"
+        android:title="Item" />
+    <item
+        android:id="@+id/action_light"
+        android:title="Item" />
+    <item
+        android:id="@+id/action_availability"
+        android:title="Item" />
+</menu>
