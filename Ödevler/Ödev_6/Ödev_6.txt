@@ -1,0 +1,10 @@
+Teslim Tarihi: 14 Mayıs 23:59
+
+Retrofit içerisinde kullanılan
+HTTP Method çeşitleri: GET, POST, PUT, DELETE
+Bu metodlar nedir ve kullanım alanları nelerdir.
+
+Retrofit içerisinde en çok kullanılan: Annotations'lar
+Ve bunların interace içindeki kullanımları ve açıklamaları.
+
+En çok kullanılan HttpStatus kodlar nedir ve nei şe yarar. 200, 500, 401, 403 vb.
