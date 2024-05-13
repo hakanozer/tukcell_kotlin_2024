@@ -1,0 +1,15 @@
+Teslim Tarihi: 14 Mayıs 23:59
+Swagger araştırma konusu. Swagger nedir ve nasıl kullanılır. JWT, Basic Auth yapıları swagger ile nasıl test edilir. Swagger nasıl test edilir. 1 sayfa doküman.
+
+
+Sercan Çelik:
+Token Key Store -> araştırması ve neden kullanılması gerektiği. 1 saatlik arkadaşlara bir ders.
+
+
+Sercan Çelik Hariç.
+SharedPreferences  -> ödevi herkes yapacak.
+Class yapılacak 2 adet method.
+getUser -> User nesnesi gelecek
+setUser -> User nesnesi alacak.
+
+

@@ -11,6 +11,4 @@ interface IDummyService {
     @POST("auth/login")
     fun userLogin( @Body userLogin: UserLogin ) : Call<User>
 
-
-
 }
