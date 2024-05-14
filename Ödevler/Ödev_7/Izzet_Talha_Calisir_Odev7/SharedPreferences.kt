@@ -1,3 +1,9 @@
+package com.tlh.sharedpref
+
+import android.content.Context
+import com.google.gson.Gson
+import com.tlh.sharedpref.models.User
+import android.content.SharedPreferences
 
 class SecureSharedPreferences(context: Context) {
 
