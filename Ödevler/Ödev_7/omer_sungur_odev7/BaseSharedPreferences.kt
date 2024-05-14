@@ -44,7 +44,7 @@ class BaseSharedPreferences(
  *     ...
  *
  *     val baseSharedPreferences = BaseSharedPreferences(this)
- *     baseSharedPreferences.setUser(user) -> user nesnemizi buraya paslıyoruz.
+ *     baseSharedPreferences.setUser("my_key", user) -> user nesnemizi buraya paslıyoruz.
  * }
  *
  * Second Activity:
@@ -52,7 +52,7 @@ class BaseSharedPreferences(
  *     ...
  *
  *     val baseSharedPreferences = BaseSharedPreferences(this)
- *     val user = baseSharedPreferences.getUser() -> user değişkenimizde artık sakladığımız veriler var.
+ *     val user = baseSharedPreferences.getUser("my_key") -> user değişkenimizde artık sakladığımız veriler var.
  * }
  */
 
