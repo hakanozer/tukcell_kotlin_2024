@@ -4,7 +4,7 @@ import android.content.Context
 import android.content.SharedPreferences
 import com.google.gson.Gson
 
-class SharedPref(context: Context) {
+class SharedPref private constructor(context: Context) {
 
     private val sharedPreferences: SharedPreferences =
         context.getSharedPreferences(SHARED_PREF_NAME, Context.MODE_PRIVATE)
