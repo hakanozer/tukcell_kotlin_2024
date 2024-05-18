@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".DetailActivity"
+    android:background="@color/light_pink"
+    >
+
+    <TextView
+        android:id="@+id/txtName"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="10dp"
+        android:gravity="center"
+        android:text="NAME"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="26sp"
+        android:textStyle="bold|italic"
+        />
+    <ImageView
+        android:id="@+id/imgView"
+        android:layout_margin="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        android:layout_gravity="center"/>
+
+   <LinearLayout
+       android:layout_marginTop="20dp"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="horizontal"
+       android:padding="10dp"
+       >
+       <TextView
+           android:textStyle="bold"
+           android:padding="@dimen/txt_padding"
+           android:id="@+id/txtCalories"
+           android:layout_width="0dp"
+           android:layout_weight="1"
+           android:layout_height="match_parent"
+           android:text="Calories:"
+           android:gravity="center"
+           android:background="@drawable/custom_txt_view"
+           android:textSize="@dimen/detail_txt_size"
+           />
+       <TextView
+           android:textStyle="bold"
+           android:padding="@dimen/txt_padding"
+           android:id="@+id/txtRating"
+           android:layout_width="0dp"
+           android:layout_weight="1"
+           android:layout_height="match_parent"
+           android:text="Rating:"
+           android:gravity="center"
+           android:background="@drawable/custom_txt_view"
+           android:textSize="@dimen/detail_txt_size"
+
+           />
+       <TextView
+           android:textStyle="bold"
+           android:padding="@dimen/txt_padding"
+           android:id="@+id/txtCuisine"
+           android:layout_width="0dp"
+           android:layout_weight="1"
+           android:layout_height="wrap_content"
+           android:text="Cuisine:"
+           android:gravity="center"
+           android:background="@drawable/custom_txt_view"
+           android:textSize="@dimen/detail_txt_size"
+
+           />
+   </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        >
+        <TextView
+            android:textStyle="bold"
+            android:padding="@dimen/txt_padding"
+            android:id="@+id/txtReviewCount"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="Review Count:"
+            android:gravity="center"
+            android:background="@drawable/custom_txt_view"
+            android:textSize="@dimen/detail_txt_size"
+
+            />
+        <TextView
+            android:textStyle="bold"
+            android:padding="@dimen/txt_padding"
+            android:id="@+id/txtPreparingMinute"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="Preparing Minute:"
+            android:gravity="center"
+            android:background="@drawable/custom_txt_view"
+            android:textSize="@dimen/detail_txt_size"
+
+            />
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            android:textStyle="bold"
+            android:padding="@dimen/txt_padding"
+            android:id="@+id/txtDifficulty"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="Difficulty:"
+            android:gravity="center"
+            android:background="@drawable/custom_txt_view"
+            android:textSize="@dimen/detail_txt_size"
+
+            />
+
+        <TextView
+            android:textStyle="bold"
+            android:padding="@dimen/txt_padding"
+            android:id="@+id/txtCookMinute"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="Cook Minute:"
+            android:gravity="center"
+            android:background="@drawable/custom_txt_view"
+            android:textSize="@dimen/detail_txt_size"
+            />
+    </LinearLayout>
+
+
+
+    <TextView
+        android:textStyle="bold"
+        android:padding="@dimen/txt_padding"
+        android:id="@+id/txtServings"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Servings:"
+        android:background="@drawable/custom_txt_view"
+        android:textSize="@dimen/detail_txt_size"
+        android:layout_marginBottom="20dp"/>
+
+
+    <LinearLayout
+        android:layout_margin="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:textColor="@color/black"
+            android:id="@+id/txtMealType"
+            android:padding="@dimen/txt_padding"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="Meal Type:"
+            android:textSize="@dimen/detail_txt_size"/>
+        <TextView
+            android:textColor="@color/black"
+            android:id="@+id/txtTags"
+            android:padding="@dimen/txt_padding"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="Tags:"
+            android:textSize="@dimen/detail_txt_size"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_margin="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <TextView
+            android:textColor="@color/black"
+            android:id="@+id/txtIngredients"
+            android:layout_marginBottom="5dp"
+            android:padding="@dimen/txt_padding"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ingredients:"
+            android:textSize="@dimen/detail_txt_size"/>
+
+        <TextView
+            android:textColor="@color/black"
+            android:id="@+id/txtInstructions"
+            android:layout_marginBottom="20dp"
+            android:padding="@dimen/txt_padding"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Instructions:"
+            android:textSize="@dimen/detail_txt_size"
+            />
+    </LinearLayout>
+
+
+</LinearLayout>
+</ScrollView>

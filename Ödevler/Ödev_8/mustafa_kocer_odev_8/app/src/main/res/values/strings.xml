@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Odev8</string>
+    <dimen name="detail_txt_size">18sp</dimen>
+    <dimen name="txt_padding">7dp</dimen>
+
+
+</resources>

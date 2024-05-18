@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_pink"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/txtTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Food Recipes"
+        android:textStyle="bold"
+        android:textColor="@android:color/background_dark"
+        android:textSize="24sp"
+        android:textAlignment="center"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="40dp"
+        />
+
+    <LinearLayout
+        android:id="@+id/linearSearch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@+id/txtTitle"
+        app:layout_constraintStart_toStartOf="@+id/txtTitle"
+        app:layout_constraintEnd_toEndOf="@+id/txtTitle"
+        android:layout_marginTop="20dp"
+        android:padding="20dp"
+        >
+
+        <EditText
+            android:hint="Arama Yap!"
+            android:textSize="20sp"
+            android:id="@+id/edtTxtSearch"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="20dp"
+            android:layout_weight="3"
+            android:drawableEnd="@drawable/search_icon"
+
+            tools:ignore="SpeakableTextPresentCheck" />
+
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/listViewRecipe"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="5dp"
+        android:padding="5dp"
+        app:layout_constraintEnd_toEndOf="@+id/linearSearch"
+        app:layout_constraintStart_toStartOf="@+id/linearSearch"
+        app:layout_constraintTop_toBottomOf="@+id/linearSearch"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:dividerHeight="4dp"
+
+        />
+</androidx.constraintlayout.widget.ConstraintLayout>
