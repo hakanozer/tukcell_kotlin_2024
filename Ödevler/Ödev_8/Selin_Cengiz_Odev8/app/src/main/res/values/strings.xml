@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Selin_Cengiz_Odev8</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="searchview_hint">Classic Margherita Pizza</string>
+    <string name="rating">Rating</string>
+    <string name="calories">Calories</string>
+    <string name="time">Time</string>
+    <string name="instructions">Instructions</string>
+    <string name="ingredients">Ingredients</string>
+    <string name="app">Recipe App</string>
+</resources>
