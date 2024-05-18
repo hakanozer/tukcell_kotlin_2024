@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">Recipe App - HW8</string>
+    <string name="instructions">Instructions</string>
+    <string name="ingredients">Ingredients</string>
+    <string name="food_image">Food Image</string>
+
+    <string name="detail_name">Name: %1$s</string>
+    <string name="detail_prep_time_minutes">Prep Time Minutes: %1$d</string>
+    <string name="detail_cook_time_minutes">%1$d min</string>
+    <string name="detail_servings">Servings: %1$d</string>
+    <string name="detail_difficulty">%1$s</string>
+    <string name="detail_cuisine">Cuisine: %1$s</string>
+    <string name="detail_calories_per_serving">Calories Per Serving: %1$d</string>
+    <string name="detail_rating">%.1f</string>
+    <string name="detail_meal_type">Meal Type: %1$s</string>
+    <string name="detail_ingredients">-> %1$s</string>
+    <string name="detail_instructions">-> %1$s</string>
+
+    <string name="recipe_name">Name: %1$s</string>
+    <string name="recipe_cuisine">Cuisine: %1$s</string>
+    <string name="recipe_calories_per_serving">Calories: %1$d cal</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="search">Search</string>
+    <string name="time">Time</string>
+    <string name="rating">Rating</string>
+    <string name="difficulty">Difficulty</string>
+</resources>

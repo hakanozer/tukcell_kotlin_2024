@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph_main_activity"
+    app:startDestination="@id/splashFragment">
+
+    <fragment
+        android:id="@+id/recipeListFragment"
+        android:name="com.omersungur.recipeapp_hw8.presentation.recipe_list.RecipeListFragment"
+        android:label="fragment_recipe_list"
+        tools:layout="@layout/fragment_recipe_list" >
+        <action
+            android:id="@+id/action_recipeListFragment_to_recipeDetailFragment"
+            app:destination="@id/recipeDetailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/recipeDetailFragment"
+        android:name="com.omersungur.recipeapp_hw8.presentation.recipe_detail.RecipeDetailFragment"
+        android:label="fragment_recipe_detail"
+        tools:layout="@layout/fragment_recipe_detail" >
+        <argument
+            android:name="recipe_result"
+            app:argType="com.omersungur.recipeapp_hw8.domain.model.RecipeResult" />
+    </fragment>
+    <fragment
+        android:id="@+id/splashFragment"
+        android:name="com.omersungur.recipeapp_hw8.presentation.splash_screen.SplashFragment"
+        android:label="fragment_splash"
+        tools:layout="@layout/fragment_splash" >
+        <action
+            android:id="@+id/action_splashFragment_to_recipeListFragment"
+            app:destination="@id/recipeListFragment"
+            app:popUpTo="@id/splashFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+</navigation>
