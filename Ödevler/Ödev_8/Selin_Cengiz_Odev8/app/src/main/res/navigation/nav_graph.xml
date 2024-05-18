@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/splashFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.selincengiz.selin_cengiz_odev8.presentation.home.HomeFragment"
+        android:label="HomeFragment" >
+        <action
+            android:id="@+id/homeToDetail"
+            app:destination="@id/detailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/detailFragment"
+        android:name="com.selincengiz.selin_cengiz_odev8.presentation.detail.DetailFragment"
+        android:label="DetailFragment" >
+        <argument
+            android:name="recipe"
+            app:argType="com.selincengiz.selin_cengiz_odev8.domain.entities.RecipeUI" />
+    </fragment>
+    <fragment
+        android:id="@+id/splashFragment"
+        android:name="com.selincengiz.selin_cengiz_odev8.presentation.splash.SplashFragment"
+        android:label="SplashFragment" >
+        <action
+            android:id="@+id/splashToHome"
+            app:destination="@id/homeFragment" />
+    </fragment>
+</navigation>
