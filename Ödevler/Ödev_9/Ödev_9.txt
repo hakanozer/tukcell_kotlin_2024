@@ -1,4 +1,4 @@
-Teslim Tarihi: 19 Mayıs 2024
+Teslim Tarihi: 23 Mayıs 2024 - Saat: 23:59
 
 Listview ile gelen verilerin sayfalama sistemi:
 Service: https://dummyjson.com/products?limit=10&skip=20
