@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/r_name"
+        android:layout_width="231dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_weight="1"
+        android:fontFamily="@font/alice"
+        android:text="name"
+        android:textAlignment="textStart"
+        android:textColor="#3F51B5"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/r_caloriesPerServing"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_weight="1"
+        android:fontFamily="@font/alice"
+        android:text="cal"
+        android:textAlignment="center"
+        android:textColor="#FF0000"
+        android:textSize="24sp" />
+</LinearLayout>
