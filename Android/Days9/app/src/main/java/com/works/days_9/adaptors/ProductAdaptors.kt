@@ -2,12 +2,15 @@ package com.works.days_9.adaptors
 
 import android.app.Activity
 import android.content.Context
+import android.graphics.Color
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ArrayAdapter
 import android.widget.ImageView
 import android.widget.TextView
+import com.bumptech.glide.Glide
 import com.works.days_9.R
 import com.works.days_9.models.Product
 
@@ -26,6 +29,13 @@ class ProductAdaptors(private val context: Activity, private var arr: List<Produ
         r_title.setText(dt.title)
         r_price.setText("${dt.price}₺")
 
+        val url = dt.thumbnail
+        Glide.with(rootView).load(url).into(r_image)
+
+        Log.d("this", "row call")
+        rootView.setOnClickListener {
+            it.setBackgroundColor(Color.RED)
+        }
         return rootView
     }
 
