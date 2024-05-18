@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ProgressBar
+        android:id="@+id/progBar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/darkOrange"
+        app:layout_constraintBottom_toBottomOf="@+id/listViewRecipes"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/listViewRecipes" />
+
+    <Button
+        android:id="@+id/btnSearch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="8dp"
+        android:backgroundTint="@color/darkOrange"
+        android:text="Ara"
+        app:layout_constraintBottom_toTopOf="@+id/listViewRecipes"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ListView
+        android:id="@+id/listViewRecipes"
+        tools:listitem="@layout/recipe_item"
+        android:paddingBottom="10dp"
+
+        android:dividerHeight="10dp"
+        android:divider="@color/white"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnSearch" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        app:boxStrokeColor="@color/orange"
+        app:hintTextColor="@color/orange"
+        app:layout_constraintBottom_toBottomOf="@+id/btnSearch"
+        app:layout_constraintEnd_toStartOf="@+id/btnSearch"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/btnSearch"
+
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editTxtSearchRecipe"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:allowClickWhenDisabled="true"
+            android:ellipsize="end"
+            android:hint="Yemek Ara"
+            android:imeOptions="actionSearch"
+            android:inputType="text|textAutoComplete"
+
+            android:maxLines="1" />
+    </com.google.android.material.textfield.TextInputLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
