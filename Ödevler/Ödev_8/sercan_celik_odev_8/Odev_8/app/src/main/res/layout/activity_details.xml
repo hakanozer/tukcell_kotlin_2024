@@ -1,0 +1,356 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/details_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetailsActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fitsSystemWindows="true">
+
+        <com.google.android.material.appbar.CollapsingToolbarLayout
+            android:id="@+id/collapsing_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fitsSystemWindows="true"
+            app:collapsedTitleGravity="bottom"
+            app:collapsedTitleTextAppearance="@style/CollapsedAppBar"
+            app:collapsedTitleTextColor="@color/black"
+            app:expandedTitleGravity="bottom"
+            app:expandedTitleTextAppearance="@style/ExpandedAppBar"
+            app:expandedTitleTextColor="@color/black"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed"
+            app:title="Recipe name">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:layout_collapseMode="parallax">
+
+                <ImageView
+                    android:id="@+id/img_recipe_detail"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="top"
+                    android:scaleType="center"
+                    android:src="@drawable/istanbul" />
+
+                <View
+                    android:layout_width="533dp"
+                    android:layout_height="103dp"
+                    android:layout_gravity="bottom"
+                    android:background="@color/white2" />
+
+
+            </FrameLayout>
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?actionBarSize"
+                app:layout_collapseMode="pin" />
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/nestedScrollView"
+        android:layout_width="match_parent"
+
+        android:layout_height="813dp"
+        app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="45dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                tools:ignore="ExtraText,MissingClass">
+
+                <GridLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:alignmentMode="alignMargins"
+                    android:columnCount="2"
+                    android:orientation="horizontal"
+                    android:rowCount="4">
+
+                    <LinearLayout
+                        android:layout_width="169dp"
+                        android:layout_height="30dp"
+                        android:layout_row="0"
+                        android:layout_column="0"
+                        android:orientation="horizontal"
+                        tools:ignore="UseCompoundDrawables,UselessParent">
+
+                        <ImageView
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:layout_gravity="center_vertical"
+                            android:src="@drawable/ic_cooker" />
+
+                        <TextView
+                            android:id="@+id/prep_time"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="end|center_vertical"
+                            android:gravity="end"
+                            android:paddingStart="8dp"
+                            android:text="Text 1"
+                            android:textSize="16sp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+
+                        android:layout_width="169dp"
+                        android:layout_height="30dp"
+                        android:layout_row="0"
+                        android:layout_column="1"
+                        android:orientation="horizontal"
+                        tools:ignore="UseCompoundDrawables,UselessParent">
+
+                        <ImageView
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:layout_gravity="center_vertical"
+                            android:src="@drawable/ic_cook" />
+
+                        <TextView
+                            android:id="@+id/cook_time"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="end|center_vertical"
+                            android:gravity="end"
+                            android:paddingStart="8dp"
+                            android:text="Text 1"
+                            android:textSize="16sp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="169dp"
+                        android:layout_height="30dp"
+                        android:layout_row="1"
+                        android:layout_column="0"
+                        android:orientation="horizontal"
+                        tools:ignore="UseCompoundDrawables,UselessParent">
+
+                        <ImageView
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:layout_gravity="center_vertical"
+                            android:src="@drawable/ic_difficult" />
+
+                        <TextView
+                            android:id="@+id/difficult_lvl"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="end|center_vertical"
+                            android:gravity="end"
+                            android:paddingStart="8dp"
+                            android:text="Text 1"
+                            android:textSize="16sp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="169dp"
+                        android:layout_height="30dp"
+                        android:layout_row="1"
+                        android:layout_column="1"
+                        android:orientation="horizontal"
+                        tools:ignore="UseCompoundDrawables,UselessParent">
+
+                        <ImageView
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:layout_gravity="center_vertical"
+                            android:src="@drawable/ic_serving" />
+
+                        <TextView
+                            android:id="@+id/serving"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="end|center_vertical"
+                            android:gravity="end"
+                            android:paddingStart="8dp"
+                            android:text="Text 1"
+                            android:textSize="16sp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="169dp"
+                        android:layout_height="30dp"
+                        android:layout_row="2"
+                        android:layout_column="0"
+                        android:orientation="horizontal"
+                        tools:ignore="UseCompoundDrawables,UselessParent">
+
+                        <ImageView
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:layout_gravity="center_vertical"
+                            android:src="@drawable/ic_cuisine" />
+
+                        <TextView
+                            android:id="@+id/cuisine"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="end|center_vertical"
+                            android:gravity="end"
+                            android:paddingStart="8dp"
+                            android:text="Text 1"
+                            android:textSize="16sp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="169dp"
+                        android:layout_height="30dp"
+                        android:layout_row="2"
+                        android:layout_column="1"
+                        android:orientation="horizontal"
+                        tools:ignore="UseCompoundDrawables,UselessParent">
+
+                        <ImageView
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:layout_gravity="center_vertical"
+                            android:src="@drawable/ic_kcal" />
+
+                        <TextView
+                            android:id="@+id/kcal"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="end|center_vertical"
+                            android:gravity="end"
+                            android:paddingStart="8dp"
+                            android:text="Text 1"
+                            android:textSize="16sp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="169dp"
+                        android:layout_height="30dp"
+                        android:layout_row="3"
+                        android:layout_column="0"
+                        android:orientation="horizontal"
+                        tools:ignore="UseCompoundDrawables,UselessParent">
+
+                        <ImageView
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:layout_gravity="center_vertical"
+                            android:src="@drawable/ic_review" />
+
+                        <TextView
+                            android:id="@+id/reviews"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="end|center_vertical"
+                            android:gravity="end"
+                            android:paddingStart="8dp"
+                            android:text="Text 1"
+                            android:textSize="16sp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="169dp"
+                        android:layout_height="30dp"
+                        android:layout_row="3"
+                        android:layout_column="1"
+                        android:orientation="horizontal"
+                        tools:ignore="UseCompoundDrawables,UselessParent">
+
+                        <ImageView
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:layout_gravity="center_vertical"
+                            android:src="@drawable/ic_meal_type" />
+
+                        <TextView
+                            android:id="@+id/mealType"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="end|center_vertical"
+                            android:gravity="end"
+                            android:paddingStart="8dp"
+                            android:text="Text 1"
+                            android:textSize="16sp" />
+
+                    </LinearLayout>
+                </GridLayout>
+
+                <TextView
+                    android:id="@+id/ingredients"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/font_main"
+                    android:text="Ingredients:"
+                    android:textColor="@color/black2"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/instructions"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:fontFamily="@font/font_main"
+                    android:text="Instructions:"
+                    android:textColor="@color/black2"
+                    android:textSize="16sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="25dp">
+
+                    <TextView
+                        android:id="@+id/tags"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/font_main"
+                        android:text="Text 1"
+                        android:textSize="16sp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </androidx.core.widget.NestedScrollView>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center_horizontal"
+        android:layout_marginBottom="5dp"
+        android:orientation="horizontal">
+
+        <ProgressBar
+            android:id="@+id/progressBar2"
+            style="?android:attr/progressBarStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginBottom="400dp"/>
+    </LinearLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

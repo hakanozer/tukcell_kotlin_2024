@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+
+    <style name="ImageStyle_circle">
+        <item name="cornerSize">50%</item>
+        <item name="cornerFamily">rounded</item>
+    </style>
+
+    <style name="ExpandedAppBar" parent="TextAppearance.AppCompat.Widget.ActionBar.Title">
+        <item name="android:textSize">22sp</item>
+        <item name="android:fontFamily">@font/font_cherl</item>
+        <item name="fontStyle" value="bold"/>
+    </style>
+
+    <style name="CollapsedAppBar" parent="TextAppearance.AppCompat.Widget.ActionBar.Title">
+        <item name="android:textSize">22sp</item>
+        <item name="android:fontFamily">@font/font_cherl</item>
+        <item name="fontStyle" value="bold"/>
+    </style>
+</resources>
+
+
+

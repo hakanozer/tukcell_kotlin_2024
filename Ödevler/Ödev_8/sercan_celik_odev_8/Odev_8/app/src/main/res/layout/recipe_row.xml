@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="20sp"
+    android:background="@drawable/search_view_bg">
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/r_image"
+        android:layout_width="135dp"
+        android:layout_height="135dp"
+        android:padding="15dp"
+        android:scaleType="fitCenter"
+        app:shapeAppearance="@style/ImageStyle_circle" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/r_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="5dp"
+            android:layout_marginTop="30dp"
+            android:text="Lahmacun"
+            android:textSize="20sp"
+            tools:ignore="RtlSymmetry" />
+
+        <TextView
+            android:id="@+id/r_calories"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="10dp"
+            android:text="150 kalori"
+            android:textAlignment="textEnd"
+            android:textColor="#2B972D"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+</LinearLayout>
