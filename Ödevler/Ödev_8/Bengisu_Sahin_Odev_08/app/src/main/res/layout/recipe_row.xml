@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp">
+        <TextView
+            android:id="@+id/row_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="20sp"
+            android:text="Pizza" />
+
+        <TextView
+            android:id="@+id/row_caloriesPErServing"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAlignment="textEnd"
+            android:layout_weight="1"
+            android:textSize="20sp"
+            android:text="350"
+            android:textStyle="italic"
+            android:textColor="#78DF00"/>
+
+    </LinearLayout>
+</LinearLayout>

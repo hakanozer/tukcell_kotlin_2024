@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Bengisu_Sahin_Odev_08</string>
+    <string name="meal_type">Meal Type:</string>
+    <string name="name">Name:</string>
+    <string name="servings">Servings:</string>
+    <string name="difficulty">Difficulty:</string>
+    <string name="cuisine">Cuisine:</string>
+    <string name="calories_per_serving">Calories Per Serving:</string>
+    <string name="tags">Tags:</string>
+    <string name="user_id">User ID:</string>
+    <string name="image">Image:</string>
+    <string name="rating">Rating:</string>
+    <string name="review_count">Review Count:</string>
+    <string name="cook_time_minutes">Cook Time Minutes:</string>
+    <string name="preperation_time_minutes">Preperation Time Minutes:</string>
+    <string name="instructions">Instructions:</string>
+    <string name="ingredients">Ingredients:</string>
+</resources>
