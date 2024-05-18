@@ -76,8 +76,8 @@ class MainActivity : AppCompatActivity() {
                         iDummyService.searchRecipes(searchText).enqueue(object : Callback<Recipes>{
                             override fun onResponse(p0: Call<Recipes>, res: Response<Recipes>) {
                                 if (res.isSuccessful) {
-                                    val responseList = res.body()!!.recipes
-                                    recipeAdapter =RecipeAdapter(this@MainActivity,responseList)
+                                    recipeList = res.body()!!.recipes
+                                    recipeAdapter =RecipeAdapter(this@MainActivity,recipeList)
                                     binding.listViewRecipes.adapter = recipeAdapter
                                 }
                             }
