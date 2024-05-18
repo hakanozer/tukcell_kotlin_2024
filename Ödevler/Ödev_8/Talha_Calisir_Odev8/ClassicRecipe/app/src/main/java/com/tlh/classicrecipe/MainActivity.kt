@@ -54,16 +54,16 @@ class MainActivity : AppCompatActivity() {
     private infix fun loadRows(userQuery: String) {
 
         dummyService.getRecipe(userQuery).enqueue(object : Callback<Recipes> {
-            override fun onResponse(call: Call<Recipes>, response: Response<Recipes>) {
-                if (response.isSuccessful) {
-                    val array = response.body()?.recipes
+            override fun onResponse(c: Call<Recipes>, res: Response<Recipes>) {
+                if (res.isSuccessful) {
+                    val array = res.body()?.recipes
                     val adapter = array?.let { RecipeAdapter(this@MainActivity, array) }
                     listView.adapter = adapter
 
                 }
             }
 
-            override fun onFailure(p0: Call<Recipes>, p1: Throwable) {
+            override fun onFailure(param1: Call<Recipes>, param2: Throwable) {
                 Toast.makeText(
                     this@MainActivity,
                     "There is no food with that name",
