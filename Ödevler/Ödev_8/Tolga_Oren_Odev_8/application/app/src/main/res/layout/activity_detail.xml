@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.activity.DetailActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="10dp">
+
+
+        <include
+            android:id="@+id/detailToolbar"
+            layout="@layout/toolbar" />
+
+        <ImageView
+            android:id="@+id/recipeImgV"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:gravity="start"
+            android:text="Makarna"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/detailToolbar" />
+
+        <TextView
+            android:id="@+id/ratingTw"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="10dp"
+            android:text="4.6"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="@+id/difficultyTw"
+            app:layout_constraintStart_toStartOf="@+id/difficultyTw"
+            app:layout_constraintTop_toTopOf="@+id/recipeImgV" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginEnd="10dp"
+            app:layout_constraintBottom_toBottomOf="@+id/ratingTw"
+            app:layout_constraintEnd_toStartOf="@+id/ratingTw"
+            app:layout_constraintTop_toTopOf="@+id/ratingTw"
+            app:srcCompat="@drawable/ic_star" />
+
+        <TextView
+            android:id="@+id/difficultyTw"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="Easy"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/recipeImgV"
+            app:layout_constraintTop_toBottomOf="@+id/ratingTw" />
+
+        <TextView
+            android:id="@+id/mealTypeTw"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:text="kahvaltı"
+            app:layout_constraintBottom_toTopOf="@+id/cuisineTw"
+            app:layout_constraintEnd_toEndOf="@+id/cuisineTw"
+            app:layout_constraintStart_toStartOf="@+id/cuisineTw" />
+
+        <TextView
+            android:id="@+id/cuisineTw"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:text="Italian"
+            app:layout_constraintBottom_toBottomOf="@+id/recipeImgV"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/recipeImgV" />
+
+        <TextView
+            android:id="@+id/prepTitleTw"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="PREP"
+            android:textSize="12sp"
+            android:layout_marginTop="20dp"
+            app:layout_constraintEnd_toStartOf="@+id/cookTitleTw"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/recipeImgV" />
+
+        <TextView
+            android:id="@+id/cookTitleTw"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="COOK"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/prepTitleTw"
+            app:layout_constraintTop_toTopOf="@+id/prepTitleTw" />
+
+        <TextView
+            android:id="@+id/prepTimeTw"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="30 dk"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/prepTitleTw"
+            app:layout_constraintStart_toStartOf="@+id/prepTitleTw"
+            app:layout_constraintTop_toBottomOf="@+id/prepTitleTw" />
+
+        <TextView
+            android:id="@+id/cookTimeTw"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="20 dk"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/cookTitleTw"
+            app:layout_constraintStart_toStartOf="@+id/cookTitleTw"
+            app:layout_constraintTop_toBottomOf="@+id/cookTitleTw" />
+
+        <TextView
+            android:id="@+id/servingsTitleTw"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="SERVINGS"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toStartOf="@+id/caloriesTitleTw"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/prepTimeTw" />
+
+        <TextView
+            android:id="@+id/caloriesTitleTw"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="CALORIES"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/servingsTitleTw"
+            app:layout_constraintTop_toBottomOf="@+id/cookTimeTw" />
+
+        <TextView
+            android:id="@+id/servingsTw"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="4"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/servingsTitleTw"
+            app:layout_constraintStart_toStartOf="@+id/servingsTitleTw"
+            app:layout_constraintTop_toBottomOf="@+id/servingsTitleTw" />
+
+        <TextView
+            android:id="@+id/caloriesTw"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="316 kcal"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/caloriesTitleTw"
+            app:layout_constraintStart_toStartOf="@+id/caloriesTitleTw"
+            app:layout_constraintTop_toBottomOf="@+id/caloriesTitleTw" />
+
+        <TextView
+            android:id="@+id/ingredientsTw"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:text="Elma Armut"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ingredientsTitleTw" />
+
+        <TextView
+            android:id="@+id/ingredientsTitleTw"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:padding="10dp"
+            android:paddingStart="30dp"
+            android:text="Ingredients"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/caloriesTw" />
+
+        <TextView
+            android:id="@+id/instructionsTitleTw"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:paddingStart="30dp"
+            android:text="Instructions"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ingredientsTw" />
+
+        <TextView
+            android:id="@+id/instructionsTw"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:text="Şöyle yap böyle yap"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/instructionsTitleTw" />
+
+        <TextView
+            android:id="@+id/tagsTw"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="20dp"
+            android:text="tagler"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/instructionsTw" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
