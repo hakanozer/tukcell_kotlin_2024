@@ -7,6 +7,6 @@ import retrofit2.http.Query
 
 interface IDummyService {
 
-    @GET("recipes")
+    @GET("recipes/search")
     fun getRecipe(@Query("q") search: String): Call<Recipes>
 }
