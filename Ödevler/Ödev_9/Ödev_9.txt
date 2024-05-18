@@ -1,0 +1,5 @@
+Teslim Tarihi: 19 Mayıs 2024
+
+Listview ile gelen verilerin sayfalama sistemi:
+Service: https://dummyjson.com/products?limit=10&skip=20
+

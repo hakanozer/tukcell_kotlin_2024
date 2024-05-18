@@ -34,7 +34,7 @@ class ProductAdaptors(private val context: Activity, private var arr: List<Produ
 
         Log.d("this", "row call")
         rootView.setOnClickListener {
-            it.setBackgroundColor(Color.RED)
+            //it.setBackgroundColor(Color.RED)
         }
         return rootView
     }
