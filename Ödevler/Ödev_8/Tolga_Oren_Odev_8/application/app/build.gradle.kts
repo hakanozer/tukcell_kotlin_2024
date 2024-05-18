@@ -51,4 +51,6 @@ dependencies {
     androidTestImplementation(libs.androidx.espresso.core)
     implementation (libs.retrofit)
     implementation (libs.converter.gson)
+    implementation ("com.github.bumptech.glide:glide:4.16.0")
+
 }

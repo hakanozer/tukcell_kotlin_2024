@@ -4,6 +4,7 @@ import android.os.Build
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.content.res.AppCompatResources
+import com.bumptech.glide.Glide
 import com.toren.odev8.R
 import com.toren.odev8.model.Recipe
 import com.toren.odev8.databinding.ActivityDetailBinding
@@ -36,7 +37,7 @@ class DetailActivity : AppCompatActivity() {
     private fun loadRecipeDetails(recipe: Recipe) {
         binding.apply {
             detailToolbar.toolbarTitle.text = recipe.name
-            recipeNameTw.text = recipe.name
+            Glide.with(this@DetailActivity).load(recipe.image).into(recipeImgV)
             ratingTw.text = recipe.rating.toString()
             difficultyTw.text = recipe.difficulty
             mealTypeTw.text = recipe.mealType.joinToString(", ")

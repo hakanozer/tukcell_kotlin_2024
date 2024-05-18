@@ -5,6 +5,7 @@ import android.content.Intent
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ArrayAdapter
+import com.bumptech.glide.Glide
 import com.toren.odev8.R
 import com.toren.odev8.model.Recipe
 import com.toren.odev8.databinding.RecipesRowBinding
@@ -22,6 +23,9 @@ class RecipesAdapter (
 
             binding.rowRecipeNameTw.text = recipes[position].name
             binding.rowCaloriesTw.text = "${recipes[position].caloriesPerServing.toString()} kcal"
+            val url = recipes[position].image
+            Glide.with(context).load(url).into(binding.rowRecipeImgV)
+
 
             binding.layout.setOnClickListener{
                 val i = Intent(context, DetailActivity::class.java)
