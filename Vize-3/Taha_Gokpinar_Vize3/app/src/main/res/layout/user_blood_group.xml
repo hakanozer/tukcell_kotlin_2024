@@ -1,0 +1,15 @@
+<TextView
+    android:id="@+id/textView3"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:ellipsize="end"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_weight="1"
+    android:fontFamily="@font/amethysta"
+    android:maxLines="1"
+    android:padding="16dp"
+    android:textAlignment="center"
+    android:textSize="20sp"
+    android:textAppearance="?attr/textAppearanceSubtitle1"
+    xmlns:android="http://schemas.android.com/apk/res/android"/>

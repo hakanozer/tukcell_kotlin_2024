@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <!-- Primary Color Palette -->
+    <color name="primaryColor">#FF9800</color> <!-- Orange -->
+    <color name="primaryLightColor">#FFC947</color>
+    <color name="primaryDarkColor">#C66900</color>
+
+    <!-- Secondary Color Palette -->
+    <color name="secondaryColor">#4CAF50</color> <!-- Green -->
+    <color name="secondaryLightColor">#80E27E</color>
+    <color name="secondaryDarkColor">#087F23</color>
+
+    <!-- Background and Surface Colors -->
+    <color name="backgroundColor">#FFFFFF</color>
+    <color name="surfaceColor">#F5F5F5</color>
+
+    <!-- Text Colors -->
+    <color name="textColorPrimary">#212121</color>
+    <color name="textColorSecondary">#757575</color>
+
+    <!-- Error Color -->
+    <color name="errorColor">#B00020</color>
+
+    <!-- Additional Orange Colors -->
+    <color name="orangeLight">#FFE0B2</color>
+    <color name="orangeDark">#E65100</color>
+
+    <!-- Additional Green Colors -->
+    <color name="greenLight">#C8E6C9</color>
+    <color name="greenDark">#2E7D32</color>
+
+</resources>

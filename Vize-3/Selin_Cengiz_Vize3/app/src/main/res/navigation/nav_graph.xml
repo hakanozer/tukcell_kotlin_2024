@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.selincengiz.selin_cengiz_vize3.presentation.home.HomeFragment"
+        android:label="HomeFragment" >
+        <action
+            android:id="@+id/homeToFilter"
+            app:destination="@id/filterFragment" />
+        <argument
+            android:name="key"
+            app:argType="string"
+            android:defaultValue="key" />
+        <argument
+            android:name="value"
+            app:argType="string"
+            android:defaultValue="value" />
+        <action
+            android:id="@+id/homeToDetail"
+            app:destination="@id/detailFragment" />
+    </fragment>
+    <dialog
+        android:id="@+id/filterFragment"
+        android:name="com.selincengiz.selin_cengiz_vize3.presentation.filter.FilterFragment"
+        android:label="FilterFragment" >
+        <action
+            android:id="@+id/filterToHome"
+            app:destination="@id/homeFragment"
+            app:popUpTo="@id/filterFragment"
+            app:popUpToInclusive="true" />
+    </dialog>
+    <fragment
+        android:id="@+id/detailFragment"
+        android:name="com.selincengiz.selin_cengiz_vize3.presentation.detail.DetailFragment"
+        android:label="DetailFragment" >
+        <argument
+            android:name="user"
+            app:argType="com.selincengiz.selin_cengiz_vize3.domain.entities.UserUI" />
+    </fragment>
+</navigation>

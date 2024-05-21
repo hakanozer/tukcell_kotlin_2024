@@ -1,0 +1,12 @@
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- İçerik rengi, burada saydam olarak ayarlandı -->
+    <solid android:color="@android:color/transparent" />
+
+    <!-- Köşe yarıçapı, burada 8dp olarak ayarlandı -->
+    <corners android:radius="8dp" />
+
+    <corners android:radius="50dp" />
+
+    <!-- Kenarlık genişliği ve rengi -->
+    <stroke android:width="2dp" android:color="#6c00ac" />
+</shape>
