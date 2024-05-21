@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Vize03_calisma</string>
+    <string name="select_the_blood_group">Select the blood group</string>
+    <string name="user_profile_image">User Profile Image</string>
+    <string name="username">userName</string>
+    <string name="age">Age: </string>
+    <string name="hair_type">Hair Type: </string>
+    <string name="hair_color">Hair Color: </string>
+    <string name="eye_color">Eye Color: </string>
+    <string name="weight">Weight: </string>
+    <string name="height">Height: </string>
+    <string name="birthdate">Birthdate: </string>
+    <string name="phone">Phone: </string>
+    <string name="email">Email: </string>
+    <string name="maiden_name">Maiden Name: </string>
+    <string name="lastname">lastName</string>
+    <string name="firstname">firstName</string>
+    <string name="filter">Filter</string>
+</resources>
