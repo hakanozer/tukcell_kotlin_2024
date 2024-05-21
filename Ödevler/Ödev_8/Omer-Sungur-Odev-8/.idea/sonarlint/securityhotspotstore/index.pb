@@ -30,8 +30,6 @@ X
 gradlew,5\b\5bbfa66edb4db3c7c33c5181f43510990d3307f9
 w
 Gapp/src/main/java/com/omersungur/recipeapp_hw8/data/remote/RecipeApi.kt,3\7\376c82947401242b8b8894aaacf5b5bca195f33a
-u
-Eapp/src/main/java/com/omersungur/recipeapp_hw8/domain/model/Recipe.kt,7\e\7ea3cf6400806c1dad0c171bcfc3814ffe7defc4
 {
 Kapp/src/main/java/com/omersungur/recipeapp_hw8/domain/model/RecipeResult.kt,c\5\c5ea0209d9684ccde8f5141d7f5ecdafaae6925f
 Ñ
@@ -116,8 +114,6 @@ G.idea/sonarlint/issuestore/c/5/c5ea0209d9684ccde8f5141d7f5ecdafaae6925f,5\0\50
 Q.idea/sonarlint/securityhotspotstore/c/5/c5ea0209d9684ccde8f5141d7f5ecdafaae6925f,5\4\54dea1c829260866fdd1cad16cbf5b6d8f906afe
 Å
 Q.idea/sonarlint/securityhotspotstore/4/3/43c5a38f7519d27fcc2842a285cf31463f1ddc98,8\9\899cf90d19311e1e7a50e5a269bbc22b202bb7c0
-w
-G.idea/sonarlint/issuestore/7/e/7ea3cf6400806c1dad0c171bcfc3814ffe7defc4,b\4\b4ffd13f590e315fb5648f00f5bde435435c6bea
 w
 G.idea/sonarlint/issuestore/4/3/43c5a38f7519d27fcc2842a285cf31463f1ddc98,6\e\6eb61e246bdecb1995c7a006cfe4f7b5c7526805
 Å
@@ -214,11 +210,11 @@ w
 G.idea/sonarlint/issuestore/1/6/162d6b3f7ffd84e83d8fc6e0af15a5b3b4e0c3d6,5\d\5d4ba4b7493d49d57a485e15a1b9d2369e94565f
 x
 Happ/src/main/java/com/omersungur/recipeapp_hw8/data/remote/dto/Recipe.kt,f\5\f5944a9d9629f581dea0de16840839646d0252b5
-{
-Kapp/src/main/java/com/omersungur/recipeapp_hw8/data/remote/dto/RecipeDto.kt,3\d\3da9df9c077a4ab2bee6ebceea6dd0fc1aa555ed
 z
 Japp/src/main/java/com/omersungur/recipeapp_hw8/domain/model/RecipeModel.kt,c\3\c36c088e75681f508b629e8721e36b3eb6fe51bf
 y
 Iapp/src/main/java/com/omersungur/recipeapp_hw8/data/remote/dto/RecipeX.kt,b\4\b4cc502208081de2b580f5a281e6aef6e0c8bb74
 z
 Japp/src/main/java/com/omersungur/recipeapp_hw8/data/mapper/RecipeMapper.kt,8\7\87f86c3e135575e533615a10f01e65d0c8e4d263
+@
+local.properties,0\7\0712df971a99ac4d2fccb8e0fb19f377f3374cca
