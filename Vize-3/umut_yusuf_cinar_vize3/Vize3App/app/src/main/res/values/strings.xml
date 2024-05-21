@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Vize3App</string>
+    <string name="textview">TextView</string>
+    <string name="back"><![CDATA[<—]]></string>
+    <string-array name="bloods">
+        <item>0-</item>
+        <item>0+</item>
+        <item>A+</item>
+        <item>A-</item>
+        <item>B+</item>
+        <item>B-</item>
+        <item>AB+</item>
+        <item>AB-</item>
+    </string-array>
+</resources>
