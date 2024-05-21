@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">eray_altilar_vize_3</string>
+
+    <string-array name="blood_groups">
+        <item>A</item>
+        <item>B</item>
+        <item>AB</item>
+        <item>0</item>
+    </string-array>
+</resources>
