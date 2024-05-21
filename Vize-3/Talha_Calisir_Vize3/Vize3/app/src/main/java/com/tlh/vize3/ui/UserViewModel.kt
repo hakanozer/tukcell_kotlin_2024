@@ -25,7 +25,7 @@ class UserViewModel : ViewModel() {
                 _users.value = response.users
                 Log.d("UserViewModel", "Fetched users: ${response.users}")
             } catch (e: Exception) {
-                // Hata durumunda boş liste ayarlayın
+               
                 _users.value = emptyList()
                 Log.e("UserViewModel", "Error fetching users", e)
             }
@@ -39,7 +39,7 @@ class UserViewModel : ViewModel() {
                 _users.value = response.users
                 Log.d("UserViewModel", "Fetched filtered users: ${response.users}")
             } catch (e: Exception) {
-                // Hata durumunda boş liste ayarlayın
+           
                 _users.value = emptyList()
                 Log.e("UserViewModel", "Error fetching filtered users", e)
             }
