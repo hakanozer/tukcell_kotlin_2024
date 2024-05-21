@@ -20,6 +20,7 @@ import com.muratdayan.vize3.adapters.UserAdapter
 import com.muratdayan.vize3.components.CustomToast
 import com.muratdayan.vize3.configs.ApiClient
 import com.muratdayan.vize3.databinding.ActivityMainBinding
+import com.muratdayan.vize3.models.User
 import com.muratdayan.vize3.models.UsersRespond
 import com.muratdayan.vize3.services.IDummyService
 import retrofit2.Call
@@ -31,6 +32,7 @@ class MainActivity : AppCompatActivity(), SearchView.OnQueryTextListener {
     private lateinit var binding: ActivityMainBinding
     lateinit var iDummyService: IDummyService
     private lateinit var userAdapter: UserAdapter
+    lateinit var userList: List<User>
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -77,7 +79,7 @@ class MainActivity : AppCompatActivity(), SearchView.OnQueryTextListener {
         iDummyService.getAllUsers().enqueue(object : Callback<UsersRespond> {
             override fun onResponse(p0: Call<UsersRespond>, res: Response<UsersRespond>) {
                 if (res.isSuccessful){
-                    val userList = res.body()!!.users
+                    userList = res.body()!!.users
 
                     userAdapter = UserAdapter(userList)
                     binding.rvUsers.adapter = userAdapter
@@ -128,6 +130,7 @@ class MainActivity : AppCompatActivity(), SearchView.OnQueryTextListener {
                     userAdapter = UserAdapter(searchedList)
                     binding.rvUsers.adapter = userAdapter
                     showControlProgressBar(false)
+                    binding.filterCard.visibility = View.GONE
                 }
             }
 
@@ -205,9 +208,9 @@ class MainActivity : AppCompatActivity(), SearchView.OnQueryTextListener {
     // arama işlemi bitince çağrılır
     override fun onQueryTextSubmit(query: String?): Boolean {
 
-        query?.let {
-            getUsersBySearch(it)
-        }
+
+        
+
         return true
     }
 
@@ -216,7 +219,9 @@ class MainActivity : AppCompatActivity(), SearchView.OnQueryTextListener {
     override fun onQueryTextChange(newText: String?): Boolean {
         newText?.let {
             getUsersBySearch(it)
+
         }
+
         return true
     }
 }
