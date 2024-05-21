@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/apozitif"
+        android:title="A+" />
+    <item
+        android:id="@+id/anegatif"
+        android:title="A-" />
+    <item
+        android:id="@+id/bpozitif"
+        android:title="B+" />
+    <item
+        android:id="@+id/bnegatif"
+        android:title="B-" />
+    <item
+        android:id="@+id/sifirpozitif"
+        android:title="0+" />
+    <item
+        android:id="@+id/sifirnegatif"
+        android:title="0-" />
+    <item
+        android:id="@+id/abpozitif"
+        android:title="Item" />
+    <item
+        android:id="@+id/abnegatif"
+        android:title="AB-" />
+</menu>
