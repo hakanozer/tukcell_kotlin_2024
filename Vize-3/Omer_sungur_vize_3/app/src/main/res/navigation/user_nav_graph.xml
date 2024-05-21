@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/user_nav_graph"
+    app:startDestination="@id/userListFragment">
+
+    <fragment
+        android:id="@+id/userListFragment"
+        android:name="com.omersungur.omer_sungur_vize_3.presentation.user_list.UserListFragment"
+        android:label="fragment_user_list"
+        tools:layout="@layout/fragment_user_list" >
+        <action
+            android:id="@+id/action_userListFragment_to_userFilterFragment"
+            app:destination="@id/userFilterFragment" />
+        <argument
+            android:name="userParam"
+            app:argType="com.omersungur.omer_sungur_vize_3.domain.model.User" />
+        <action
+            android:id="@+id/action_userListFragment_to_userDetailFragment"
+            app:destination="@id/userDetailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/userFilterFragment"
+        android:name="com.omersungur.omer_sungur_vize_3.presentation.user_filter.UserFilterFragment"
+        android:label="fragment_user_filter"
+        tools:layout="@layout/fragment_user_filter" >
+        <action
+            android:id="@+id/action_userFilterFragment_to_userListFragment"
+            app:destination="@id/userListFragment"
+            app:popUpTo="@id/userListFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/userDetailFragment"
+        android:name="com.omersungur.omer_sungur_vize_3.presentation.user_detail.UserDetailFragment"
+        android:label="fragment_user_detail"
+        tools:layout="@layout/fragment_user_detail" >
+        <argument
+            android:name="userDetail"
+            app:argType="com.omersungur.omer_sungur_vize_3.domain.model.UserX" />
+    </fragment>
+</navigation>

@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">EnesArisoy_Vize3</string>
+    <string name="searchbar_hint">Search</string>
+    <string name="clear_filter"><u><b>Clear Filter</b></u></string>
+</resources>

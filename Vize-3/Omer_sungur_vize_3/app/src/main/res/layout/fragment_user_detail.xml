@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F1E6E6"
+    tools:context=".presentation.user_detail.UserDetailFragment">
+
+    <ImageView
+        android:id="@+id/iv_user_image_detail"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="16dp"
+        android:contentDescription="@string/content_description_user_image"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:src="@tools:sample/avatars" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        app:cardCornerRadius="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iv_user_image_detail">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="8dp">
+
+                <TextView
+                    android:id="@+id/tv_first_name_detail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:textSize="16sp"
+                    tools:text="First Name:" />
+
+                <TextView
+                    android:id="@+id/tv_last_name_detail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:paddingTop="8dp"
+                    android:textSize="16sp"
+                    tools:text="Last Name:" />
+
+                <TextView
+                    android:id="@+id/tv_maiden_name_detail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:paddingTop="8dp"
+                    android:textSize="16sp"
+                    tools:text="Maiden Name:" />
+
+                <TextView
+                    android:id="@+id/tv_age_detail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:paddingTop="8dp"
+                    android:textSize="16sp"
+                    tools:text="Age:" />
+
+                <TextView
+                    android:id="@+id/tv_gender_detail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:paddingTop="8dp"
+                    android:textSize="16sp"
+                    tools:text="Gender:" />
+
+                <TextView
+                    android:id="@+id/tv_email_detail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:paddingTop="8dp"
+                    android:textSize="16sp"
+                    tools:text="Email:" />
+
+                <TextView
+                    android:id="@+id/tv_phone_detail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:paddingTop="8dp"
+                    android:textSize="16sp"
+                    tools:text="Phone:" />
+
+                <TextView
+                    android:id="@+id/tv_username_detail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:paddingTop="8dp"
+                    android:textSize="16sp"
+                    tools:text="Username:" />
+
+                <TextView
+                    android:id="@+id/tv_password_detail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:paddingTop="8dp"
+                    android:textSize="16sp"
+                    tools:text="Password:" />
+
+                <TextView
+                    android:id="@+id/tv_birth_date_detail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:paddingTop="8dp"
+                    android:textSize="16sp"
+                    tools:text="Birth Date:" />
+
+                <TextView
+                    android:id="@+id/tv_blood_group_detail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:paddingTop="8dp"
+                    android:textSize="16sp"
+                    tools:text="Blood Group:" />
+
+                <TextView
+                    android:id="@+id/tv_height_detail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:paddingTop="8dp"
+                    android:textSize="16sp"
+                    tools:text="Height:" />
+
+                <TextView
+                    android:id="@+id/tv_weight_detail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:paddingTop="8dp"
+                    android:textSize="16sp"
+                    tools:text="Weight:" />
+
+                <TextView
+                    android:id="@+id/tv_eye_color_detail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:paddingTop="8dp"
+                    android:textSize="16sp"
+                    tools:text="Eye Color:" />
+
+                <TextView
+                    android:id="@+id/tv_hair_color_detail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:paddingTop="8dp"
+                    android:textSize="16sp"
+                    tools:text="Hair Color:" />
+
+                <TextView
+                    android:id="@+id/tv_hair_style_detail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:paddingTop="8dp"
+                    android:textSize="16sp"
+                    tools:text="Hair Style:" />
+
+                <TextView
+                    android:id="@+id/tv_domain_detail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:paddingTop="8dp"
+                    android:textSize="16sp"
+                    tools:text="Domain:" />
+
+                <TextView
+                    android:id="@+id/tv_city_detail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:paddingTop="8dp"
+                    android:textSize="16sp"
+                    tools:text="City:" />
+
+                <TextView
+                    android:id="@+id/tv_address_detail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:paddingTop="8dp"
+                    android:textSize="16sp"
+                    tools:text="Address:" />
+
+                <TextView
+                    android:id="@+id/tv_university_detail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:paddingTop="8dp"
+                    android:textSize="16sp"
+                    tools:text="University:" />
+
+            </LinearLayout>
+        </ScrollView>
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>

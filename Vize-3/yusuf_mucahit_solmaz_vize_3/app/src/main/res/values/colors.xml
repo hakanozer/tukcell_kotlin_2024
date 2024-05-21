@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="textColor">#A91D3A</color>
+
+    <color name="top_app_bar_icon_bg">#FFE0DE</color>
+    <color name="top_app_bar_icon_fg">#FF5E77</color>
+</resources>

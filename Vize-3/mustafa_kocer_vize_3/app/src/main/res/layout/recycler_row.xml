@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="15dp"
+    app:cardBackgroundColor="@color/light_blue"
+    app:cardUseCompatPadding="true"
+    android:layout_margin="1dp"
+    android:padding="1dp"
+    app:contentPadding="@dimen/cardview_compat_inset_shadow"
+    app:cardElevation="@dimen/cardview_default_radius"
+    >
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="10dp"
+            android:layout_margin="3dp"
+            android:background="@color/grey"
+
+            >
+            <ImageView
+                android:id="@+id/row_img"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginEnd="10dp"
+                android:src="@drawable/ic_launcher_background"/>
+
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/row_name"
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:drawableStart="@drawable/name_icon"
+                    android:drawablePadding="10dp"
+                    android:gravity="center"
+                    android:text="MUSTIII KOCER"
+                    android:textColor="@color/dark_grey"
+                    android:textSize="14sp" />
+
+
+                <TextView
+                    android:id="@+id/row_phone"
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:drawableStart="@drawable/phone_icon"
+                    android:drawablePadding="10dp"
+                    android:gravity="center"
+                    android:text="0555 555 555 55"
+                    android:textColor="@color/dark_grey"
+                    android:textSize="14sp" />
+
+                <TextView
+
+                    android:id="@+id/row_mail"
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:drawableStart="@drawable/mail_icon"
+                    android:drawablePadding="10dp"
+                    android:gravity="center"
+                    android:text="deneme@gmail.com"
+                    android:textColor="@color/dark_grey"
+                    android:textSize="14sp" />
+
+
+                <TextView
+                    android:id="@+id/row_blood_group"
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:drawableStart="@drawable/blood_icon"
+                    android:drawablePadding="10dp"
+                    android:gravity="center"
+                    android:text="B+"
+                    android:textColor="@color/dark_grey"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+
+
+
+    </LinearLayout>
+
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">YunusEmreCeylan_Sınav3</string>
+
+    <string name="back">Geri</string>
+    <string name="name">İsim</string>
+    <string name="surname">Soyisim</string>
+    <string name="age">Yaş</string>
+    <string name="select_blood_type">Kan Grubunu Seçin</string>
+    <string name="selected_blood_type">Seçilen Kan Grubu:</string>
+    <string name="apply_filter">Filtreyi Uygula</string>
+    <string name="filter">Filter</string>
+    <string name="gender">Cinsiyet</string>
+    <string name="email">Email</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="birthdate">BirthDate</string>
+    <string name="bloorgroup">bloorGroup</string>
+    <string name="hair">Hair</string>
+    <string name="hair_type">Hair Type</string>
+    <string name="hair_color">Hair Color</string>
+    <string name="chose_gender">Cinsiyet seç</string>
+</resources>
