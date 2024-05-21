@@ -1,4 +1,4 @@
-![Screenshot_1716322097](https://github.com/hakanozer/tukcell_kotlin_2024/assets/70448538/a9524e9b-2121-4ab4-baac-68bb96465998)# <p align="center"> Users App </p>  
+# <p align="center"> Users App </p>  
 
 ## :point_down: Structures Used
 - MVVM + Clean Architecture
