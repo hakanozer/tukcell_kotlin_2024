@@ -1,4 +1,4 @@
-# <p align="center"> Users App </p>  
+![Screenshot_1716322097](https://github.com/hakanozer/tukcell_kotlin_2024/assets/70448538/a9524e9b-2121-4ab4-baac-68bb96465998)# <p align="center"> Users App </p>  
 
 ## :point_down: Structures Used
 - MVVM + Clean Architecture
@@ -41,6 +41,7 @@ Libraries Docs
 <img src="https://github.com/hakanozer/tukcell_kotlin_2024/assets/70448538/82d0440e-8465-4bb4-8473-e217ccf135c6" alt="Screenshot_1694509493" width="250" height="auto">
 <img src="https://github.com/hakanozer/tukcell_kotlin_2024/assets/70448538/b6fd03e1-467f-4df6-b4f4-0ecd78927877" alt="Screenshot_1694509493" width="250" height="auto">
 <img src="https://github.com/hakanozer/tukcell_kotlin_2024/assets/70448538/a1bf2985-ad20-46ff-b038-c30a3ed3e7bf" alt="Screenshot_1694509493" width="250" height="auto">
+<img src="https://github.com/hakanozer/tukcell_kotlin_2024/assets/70448538/16e1d8b4-5d3b-4570-b204-c329f9b399fd" alt="Screenshot_1694509493" width="250" height="auto">
 <img src="https://github.com/hakanozer/tukcell_kotlin_2024/assets/70448538/16864f73-1e72-46f4-9d10-b0e98d794a9b" alt="Screenshot_1694509493" width="250" height="auto">
 <img src="https://github.com/hakanozer/tukcell_kotlin_2024/assets/70448538/18d8f997-c48d-44b7-b18e-31a156f73648" alt="Screenshot_1694509493" width="250" height="auto">
 <img src="https://github.com/hakanozer/tukcell_kotlin_2024/assets/70448538/9ce75322-1b7c-4ed5-ab39-90e35f0976d4" alt="Screenshot_1694509493" width="250" height="auto">
