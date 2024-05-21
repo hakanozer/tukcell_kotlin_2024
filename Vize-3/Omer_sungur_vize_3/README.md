@@ -33,7 +33,6 @@ Libraries Docs
 <p align="center">
 
 </p>
-<img src="https://github.com/hakanozer/tukcell_kotlin_2024/assets/70448538/2136c511-e1d9-45ad-bc4e-aae0dcf0ef9" alt="Screenshot_1694509493" width="250" height="auto">
 <img src="https://github.com/hakanozer/tukcell_kotlin_2024/assets/70448538/ed957985-3278-4c15-a07c-fff22ae4ca41" alt="Screenshot_1694509493" width="250" height="auto">
 <img src="https://github.com/hakanozer/tukcell_kotlin_2024/assets/70448538/7729dfd6-de9f-4651-8efd-e525c2d6c958" alt="Screenshot_1694509493" width="250" height="auto">
 <img src="https://github.com/hakanozer/tukcell_kotlin_2024/assets/70448538/d9f31e55-8a6c-4c3e-b9ec-1525b37c73d3" alt="Screenshot_1694509493" width="250" height="auto">
