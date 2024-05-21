@@ -1,4 +1,5 @@
 ## 📸 Screenshots
+With two different approach
 <p align="center">
 <img width="959" alt="11" src="https://github.com/hakanozer/tukcell_kotlin_2024/assets/70065773/dc0907e7-b62d-4053-98ca-500dc146f661">
 <img width="959" alt="22" src="https://github.com/hakanozer/tukcell_kotlin_2024/assets/70065773/02f78ef8-9ad5-416c-ac51-b85d0d4fe14f">
