@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/blood_group_a_positive"
+        android:title="A+" />
+
+    <item
+        android:id="@+id/blood_group_a_negative"
+        android:title="A-" />
+
+    <item
+        android:id="@+id/blood_group_b_positive"
+        android:title="B+" />
+
+    <item
+        android:id="@+id/blood_group_b_negative"
+        android:title="B-" />
+
+    <item
+        android:id="@+id/blood_group_ab_positive"
+        android:title="AB+" />
+
+    <item
+        android:id="@+id/blood_group_ab_negative"
+        android:title="AB-" />
+
+    <item
+        android:id="@+id/blood_group_o_positive"
+        android:title="O+" />
+
+    <item
+        android:id="@+id/blood_group_o_negative"
+        android:title="O-" />
+</menu>
