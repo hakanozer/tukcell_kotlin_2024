@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color"
+    tools:context=".presentation.activity.DetailActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="40dp"
+        android:adjustViewBounds="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/dHeightTw"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="1.85 cm"
+        android:textColor="@color/text_color"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toStartOf="@+id/dWeightTw"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dNameTw" />
+
+    <TextView
+        android:id="@+id/dWeightTw"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="80 kg"
+        android:textColor="@color/text_color"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/dHeightTw"
+        app:layout_constraintEnd_toStartOf="@+id/dAgeTw"
+        app:layout_constraintStart_toEndOf="@+id/dHeightTw"
+        app:layout_constraintTop_toTopOf="@+id/dHeightTw" />
+
+    <TextView
+        android:id="@+id/dAgeTw"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="18 y.o."
+        android:textColor="@color/text_color"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/dHeightTw"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/dWeightTw"
+        app:layout_constraintTop_toTopOf="@+id/dHeightTw" />
+
+    <TextView
+        android:id="@+id/dNameTw"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="Tolga Ören"
+        android:textColor="@color/text_color"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <TextView
+        android:id="@+id/dbirthDayTw"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="TextView"
+        android:textColor="@color/text_color"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toStartOf="@+id/dGenderTw"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dWeightTw" />
+
+    <TextView
+        android:id="@+id/dGenderTw"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:textColor="@color/text_color"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/dbirthDayTw"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/dbirthDayTw"
+        app:layout_constraintTop_toTopOf="@+id/dbirthDayTw" />
+
+    <TextView
+        android:id="@+id/dHairColorTw"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="TextView"
+        android:textColor="@color/text_color"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toStartOf="@+id/dEyeColorTw"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dbirthDayTw" />
+
+    <TextView
+        android:id="@+id/dEyeColorTw"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:textColor="@color/text_color"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toStartOf="@+id/dBloodColorTw"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/dHairColorTw"
+        app:layout_constraintTop_toTopOf="@+id/dHairColorTw" />
+
+    <TextView
+        android:id="@+id/dBloodColorTw"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:textColor="@color/text_color"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/dEyeColorTw"
+        app:layout_constraintTop_toTopOf="@+id/dHairColorTw" />
+
+    <TextView
+        android:id="@+id/dTitleTw"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="TextView"
+        android:textColor="@color/text_color"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toStartOf="@+id/dCompanyTw"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dEyeColorTw" />
+
+    <TextView
+        android:id="@+id/dCompanyTw"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:textColor="@color/text_color"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/dTitleTw"
+        app:layout_constraintTop_toTopOf="@+id/dTitleTw" />
+
+    <TextView
+        android:id="@+id/dAdressTw"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="TextView"
+        android:textColor="@color/text_color"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dTitleTw" />
+
+    <TextView
+        android:id="@+id/dPhoneTw"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="TextView"
+        android:textColor="@color/text_color"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dAdressTw" />
+
+    <TextView
+        android:id="@+id/dEmailTw"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="TextView"
+        android:textColor="@color/text_color"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@+id/dPhoneTw"
+        app:layout_constraintStart_toStartOf="@+id/dPhoneTw"
+        app:layout_constraintTop_toBottomOf="@+id/dPhoneTw" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
