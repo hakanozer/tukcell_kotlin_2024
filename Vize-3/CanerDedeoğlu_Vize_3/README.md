@@ -1,7 +1,7 @@
 ## Ekran Görüntüleri
 
 ### Resim 1
-<img src="Vize-3/CanerDedeoğlu_Vize_3/ScreenShot/image_1.png" width="600">
+<img src=-"https://github.com/hakanozer/tukcell_kotlin_2024/blob/master/Vize-3/CanerDedeo%C4%9Flu_Vize_3/ScreenShot/image_1.png" width="600">
 
 ### Resim 2
 <img src="Vize-3/CanerDedeoğlu_Vize_3/ScreenShot/image_2.png" width="600">
