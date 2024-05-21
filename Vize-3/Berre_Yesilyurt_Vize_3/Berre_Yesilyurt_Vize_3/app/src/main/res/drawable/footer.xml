@@ -1,0 +1,21 @@
+<!-- res/drawable/header_background.xml -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android" android:shape="rectangle">
+    <!-- Arka plan rengi -->
+    <solid android:color="#6c00ac"/> <!-- İstediğiniz arka plan rengini burada belirtebilirsiniz -->
+
+    <!-- Kenarlık özellikleri -->
+    <stroke android:width="2dp" android:color="#6c00ac"/> <!-- Kenarlık kalınlığı ve rengi -->
+
+    <!-- Köşe yarıçapı -->
+    <corners android:radius="10dp"/> <!-- Köşe yarıçapı -->
+
+    <!-- İç boşluklar -->
+    <padding
+        android:left="8dp"
+        android:top="8dp"
+        android:right="8dp"
+        android:bottom="8dp"/>
+
+    <corners android:topLeftRadius="150dp" />
+
+</shape>

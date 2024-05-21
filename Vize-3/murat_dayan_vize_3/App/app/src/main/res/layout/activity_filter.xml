@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/darkBlue"
+    tools:context=".FilterActivity">
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/lottieAnimationView"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="24dp"
+        android:adjustViewBounds="true"
+        android:cropToPadding="false"
+        android:scaleType="centerInside"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+
+        app:layout_constraintTop_toTopOf="parent"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/toast" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/txtInputLayoutFirstName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="24dp"
+        app:hintEnabled="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lottieAnimationView">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editTxtFirstName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/green"
+            android:hint="First Name..."
+            android:inputType="text" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/txtInputLayoutLastName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        app:hintEnabled="false"
+        app:layout_constraintEnd_toEndOf="@+id/txtInputLayoutFirstName"
+        app:layout_constraintStart_toStartOf="@+id/txtInputLayoutFirstName"
+        app:layout_constraintTop_toBottomOf="@+id/txtInputLayoutFirstName">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editTxtLastName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/green"
+
+            android:hint="Last Name..."
+            android:inputType="text" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/txtInputLayoutAge"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        app:hintEnabled="false"
+        app:layout_constraintEnd_toEndOf="@+id/txtInputLayoutLastName"
+        app:layout_constraintStart_toStartOf="@+id/txtInputLayoutLastName"
+        app:layout_constraintTop_toBottomOf="@+id/txtInputLayoutLastName">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editTxtAge"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/green"
+
+            android:hint="Age..."
+            android:inputType="number" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/txtInputLayoutBloodGroup"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        app:endIconDrawable="@drawable/ic_drop_down_arrow"
+        app:endIconMode="custom"
+        app:endIconTint="@color/black"
+        app:hintEnabled="false"
+        app:layout_constraintEnd_toEndOf="@+id/txtInputLayoutAge"
+        app:layout_constraintStart_toStartOf="@+id/txtInputLayoutAge"
+        app:layout_constraintTop_toBottomOf="@+id/txtInputLayoutAge">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editTxtBloodGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/green"
+            android:hint="Blood Group..." />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/btnGetFilter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:backgroundTint="@color/orangeYellow"
+        android:text="Apply Filters"
+        android:textColor="@color/darkBlue"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtInputLayoutBloodGroup" />
+
+    <ImageView
+        android:id="@+id/imgViewBackicon"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        app:tint="@color/orangeYellow"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_left" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
