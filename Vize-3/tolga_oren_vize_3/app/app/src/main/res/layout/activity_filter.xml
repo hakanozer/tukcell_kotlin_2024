@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:background="@color/bg_color2"
+    android:layout_height="match_parent"
+    tools:context=".presentation.activity.FilterActivity">
+
+    <TextView
+        android:id="@+id/filterTv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Filtering"
+        android:textSize="20sp"
+        android:gravity="start"
+        android:layout_marginStart="30dp"
+        app:layout_constraintBottom_toBottomOf="@+id/backBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/backBtn"
+        app:layout_constraintTop_toTopOf="@+id/backBtn" />
+
+    <EditText
+        android:id="@+id/nameETxt"
+        android:tag="firstName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        android:ems="10"
+        android:hint="Name"
+        android:inputType="text"
+        android:textSize="17sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/backBtn" />
+
+    <EditText
+        android:id="@+id/surnameETxt"
+        android:tag="lastName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_marginTop="20dp"
+        android:inputType="text"
+        android:hint="Surname"
+        android:textSize="17sp"
+        app:layout_constraintEnd_toEndOf="@+id/nameETxt"
+        app:layout_constraintStart_toStartOf="@+id/nameETxt"
+        app:layout_constraintTop_toBottomOf="@+id/nameETxt" />
+
+    <EditText
+        android:id="@+id/ageETxt"
+        android:tag="age"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="text"
+        android:textSize="17sp"
+        android:layout_marginTop="20dp"
+        android:hint="Age"
+        app:layout_constraintEnd_toEndOf="@+id/surnameETxt"
+        app:layout_constraintStart_toStartOf="@+id/surnameETxt"
+        app:layout_constraintTop_toBottomOf="@+id/surnameETxt" />
+
+    <EditText
+        android:id="@+id/bloodGroupTw"
+        android:tag="bloodGroup"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_marginTop="20dp"
+        android:hint="Blood Group"
+        android:enabled="false"
+        android:textSize="17sp"
+        app:layout_constraintEnd_toStartOf="@+id/bloodGroupExpandBtn"
+        app:layout_constraintStart_toStartOf="@+id/ageETxt"
+        app:layout_constraintTop_toBottomOf="@+id/ageETxt" />
+
+    <ImageButton
+        android:id="@+id/backBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:padding="10dp"
+        android:background="@color/transparent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_back" />
+
+
+    <ImageButton
+        android:id="@+id/bloodGroupExpandBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        app:layout_constraintBottom_toBottomOf="@+id/bloodGroupTw"
+        app:layout_constraintEnd_toEndOf="@+id/ageETxt"
+        app:layout_constraintTop_toTopOf="@+id/bloodGroupTw"
+        android:background="@color/transparent"
+        app:srcCompat="@drawable/ic_arrow" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="120dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bloodGroupTw"
+        app:srcCompat="@drawable/ic_cat" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

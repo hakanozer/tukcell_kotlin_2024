@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/itm_a_pos"
+        android:title="A+" />
+    <item
+        android:id="@+id/itm_a_negative"
+        android:title="A-" />
+    <item
+        android:id="@+id/itm_b_pos"
+        android:title="B+" />
+    <item
+        android:id="@+id/itm_b_neg"
+        android:title="B-" />
+    <item
+        android:id="@+id/itm_ab_pos"
+        android:title="AB+" />
+    <item
+        android:id="@+id/itm_ab_neg"
+        android:title="AB-" />
+    <item
+        android:id="@+id/itm_sıfır_poz"
+        android:title="O+" />
+    <item
+        android:id="@+id/itm_sıfır_neg"
+        android:title="O-" />
+
+</menu>

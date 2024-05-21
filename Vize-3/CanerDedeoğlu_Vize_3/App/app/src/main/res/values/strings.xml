@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Alistirma</string>
+    <string-array name="blood_group_array">
+        <item>Lütfen seçiniz</item>
+        <item>A+</item>
+        <item>A-</item>
+        <item>B+</item>
+        <item>B-</item>
+        <item>AB+</item>
+        <item>AB-</item>
+        <item>O+</item>
+        <item>O-</item>
+    </string-array>
+</resources>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <ImageView
+        android:id="@+id/applyFilterButton"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:tint="@color/white"
+        app:srcCompat="@drawable/left_arrow_12023631" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_medium"
+        android:text="Filtreleme"
+        android:textAlignment="center"
+        android:textColor="#959494"
+        android:textSize="24sp" />
+
+    <EditText
+        android:id="@+id/firstNameEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="First Name"
+        android:textColor="#B5B6B4"
+        android:textColorHint="#B5B6B4" />
+
+    <EditText
+        android:id="@+id/lastNameEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Last Name"
+        android:textColor="#B5B6B4"
+        android:textColorHint="#B5B6B4" />
+
+    <EditText
+        android:id="@+id/ageEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Age"
+        android:textColor="#B5B6B4"
+        android:textColorHint="#B5B6B4" />
+
+    <Spinner
+        android:id="@+id/bloodGroupSpinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#9FF4F0F0"
+        android:entries="@array/blood_groups"
+        android:textColor="#EFECEC"
+        android:textColorHint="#F4EFEF" />
+
+</LinearLayout>

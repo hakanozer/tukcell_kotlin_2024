@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        app:cardBackgroundColor="@color/card_color"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="5dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/userImageVw"
+                android:layout_width="180dp"
+                android:layout_height="180dp"
+                android:adjustViewBounds="true"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:srcCompat="@tools:sample/avatars" />
+
+            <TextView
+                android:id="@+id/userNameTw"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:textColor="@color/text_color"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:ellipsize="end"
+                android:maxLines="2"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/userImageVw"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/ageTw"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="19 y.o"
+                app:layout_constraintBottom_toBottomOf="@+id/weightTw"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/weightTw"
+                app:layout_constraintTop_toTopOf="@+id/weightTw" />
+
+            <TextView
+                android:id="@+id/weightTw"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="80.1 kg"
+                app:layout_constraintBottom_toTopOf="@+id/cityTw"
+                app:layout_constraintEnd_toStartOf="@+id/ageTw"
+                app:layout_constraintStart_toEndOf="@+id/heightTw"
+                app:layout_constraintTop_toBottomOf="@+id/userNameTw" />
+
+            <TextView
+                android:id="@+id/heightTw"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1.80 cm"
+                app:layout_constraintEnd_toStartOf="@+id/weightTw"
+                app:layout_constraintStart_toEndOf="@+id/userImageVw"
+                app:layout_constraintTop_toTopOf="@+id/weightTw" />
+
+            <TextView
+                android:id="@+id/stateTw"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="FL"
+                app:layout_constraintBottom_toBottomOf="@+id/cityTw"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/cityTw"
+                app:layout_constraintTop_toTopOf="@+id/cityTw" />
+
+            <TextView
+                android:id="@+id/cityTw"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Panama City"
+                app:layout_constraintBottom_toTopOf="@+id/companyTw"
+                app:layout_constraintEnd_toStartOf="@+id/stateTw"
+                app:layout_constraintStart_toEndOf="@+id/userImageVw"
+                app:layout_constraintTop_toBottomOf="@+id/weightTw" />
+
+            <TextView
+                android:id="@+id/emailTw"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:maxLines="1"
+                android:text="tolga@tolga.com"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/userImageVw"
+                app:layout_constraintTop_toBottomOf="@+id/phoneTw" />
+
+            <TextView
+                android:id="@+id/phoneTw"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:maxLines="1"
+                android:text="+90 065 6054 0645"
+                app:layout_constraintBottom_toTopOf="@+id/emailTw"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/userImageVw"
+                app:layout_constraintTop_toBottomOf="@+id/companyTw" />
+
+            <TextView
+                android:id="@+id/companyTw"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:maxLines="2"
+                android:text="turkcell"
+                app:layout_constraintBottom_toTopOf="@+id/phoneTw"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/userImageVw"
+                app:layout_constraintTop_toBottomOf="@+id/cityTw" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>
