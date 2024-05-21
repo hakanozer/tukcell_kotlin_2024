@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">Emre_Bitil_vize_3</string>
+    <string name="name">Name</string>
+    <string name="username">Username</string>
+    <string name="blood_type">Blood Type</string>
+    <string name="dialog_title">Input Details</string>
+    <string name="positive_button">OK</string>
+    <string name="negative_button">Cancel</string>
+    <string name="hint_first_name">First Name</string>
+    <string name="hint_last_name">Last Name</string>
+    <string name="hint_age">Age</string>
+    <string name="select_blood_group">Select Blood Group</string>
+    <string-array name="blood_groups">
+        <item></item>
+        <item>A+</item>
+        <item>A-</item>
+        <item>B+</item>
+        <item>B-</item>
+        <item>AB+</item>
+        <item>AB-</item>
+        <item>O+</item>
+        <item>O-</item>
+    </string-array>
+</resources>
