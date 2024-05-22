@@ -1,0 +1,27 @@
+
+q
+Aapp/src/main/java/com/example/eray_altilar_odev_9/MainActivity.kt,f\b\fbfb417bb0a3607200e4e6e305cec4a0ccc48371
+D
+app/build.gradle.kts,d\2\d2a4383452aad84a18429a5844d31330a012a9e6
+w
+Gapp/src/main/java/com/example/eray_altilar_odev_9/model/ProductModel.kt,4\6\4691022c892447cd6ab507c0bca51ec3a9482064
+v
+Fapp/src/main/java/com/example/eray_altilar_odev_9/services/IService.kt,f\f\ff20b091676bc3ecef04d5c812dd54a10b5a1629
+y
+Iapp/src/main/java/com/example/eray_altilar_odev_9/services/IServiceApi.kt,3\5\35e4966a8970f5490154af384233881fc7544e2a
+P
+ app/src/main/AndroidManifest.xml,8\c\8c55c3ccc257e5907959013f99656e4c8ec3903e
+v
+Fapp/src/main/java/com/example/eray_altilar_odev_9/configs/ApiClient.kt,4\0\40e74b5b67f09daf626ea266ae5ec6b076421f6a
+k
+;app/src/main/java/com/example/eray_altilar_odev_9/consts.kt,a\e\ae414fb9cd382dab47b22e2a7013e0220fe7393f
+|
+Lapp/src/main/java/com/example/eray_altilar_odev_9/adapters/ProductAdapter.kt,2\3\237e9b262f7b054713f095983687dca6dbb92454
+~
+Napp/src/main/java/com/example/eray_altilar_odev_9/presentation/MainActivity.kt,c\7\c711d44c8d878ce4d906c72bfc281004cea71666
+p
+@app/src/main/java/com/example/eray_altilar_odev_9/core/consts.kt,d\e\de610d57cbedb386bd63022abb7346489f6bf016
+Š
+Zapp/src/main/java/com/example/eray_altilar_odev_9/presentation/main_screen/MainActivity.kt,3\1\31faa6e18e55781540fc8ebe4139052233c0855a
+ˆ
+Xapp/src/main/java/com/example/eray_altilar_odev_9/presentation/main_screen/ViewHolder.kt,d\a\dab16c04530771714051d1047462a593941248dc
