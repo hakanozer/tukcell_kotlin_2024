@@ -3,10 +3,7 @@ package com.omersungur.omer_sungur_odev_9.presentation.product_list
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.omersungur.omer_sungur_odev_9.core.Resource
-import com.omersungur.omer_sungur_odev_9.data.remote.dto.ProductDtoResult
-import com.omersungur.omer_sungur_odev_9.domain.model.Product
 import com.omersungur.omer_sungur_odev_9.domain.model.ProductResult
-import com.omersungur.omer_sungur_odev_9.domain.repository.ProductRepository
 import com.omersungur.omer_sungur_odev_9.domain.usecase.get_products.GetProductsUseCase
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.flow.MutableStateFlow
