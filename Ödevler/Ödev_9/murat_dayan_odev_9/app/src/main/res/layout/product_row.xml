@@ -5,15 +5,19 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:layout_margin="10dp"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:backgroundTint="@color/transparent_background"
+    android:background="@color/transparent_background"
+    >
 
     <androidx.cardview.widget.CardView
         android:id="@+id/cardviewProduct"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        app:cardBackgroundColor="@color/white"
-        app:cardCornerRadius="10dp"
-        app:cardElevation="10dp">
+        app:cardCornerRadius="30dp"
+        app:cardElevation="10dp"
+        android:layout_margin="10dp"
+        >
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"

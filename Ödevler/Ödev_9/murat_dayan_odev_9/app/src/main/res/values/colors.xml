@@ -4,4 +4,5 @@
     <color name="white">#FFFFFFFF</color>
     <color name="turkuaz">#47C0CF</color>
     <color name="blue">#1C96E8</color>
+    <color name="transparent_background">#00000000</color>
 </resources>
