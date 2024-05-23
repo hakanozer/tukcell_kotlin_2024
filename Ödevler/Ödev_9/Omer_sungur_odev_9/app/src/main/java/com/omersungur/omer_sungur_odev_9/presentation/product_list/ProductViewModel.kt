@@ -7,6 +7,7 @@ import com.omersungur.omer_sungur_odev_9.data.remote.dto.ProductDtoResult
 import com.omersungur.omer_sungur_odev_9.domain.model.Product
 import com.omersungur.omer_sungur_odev_9.domain.model.ProductResult
 import com.omersungur.omer_sungur_odev_9.domain.repository.ProductRepository
+import com.omersungur.omer_sungur_odev_9.domain.usecase.get_products.GetProductsUseCase
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
@@ -15,7 +16,7 @@ import javax.inject.Inject
 
 @HiltViewModel
 class ProductViewModel @Inject constructor(
-    private val productRepository: ProductRepository
+    private val getProductsUseCase: GetProductsUseCase
 ) : ViewModel() {
 
     private val _products = MutableStateFlow<Resource<ProductResult>>(Resource.Loading())
@@ -30,7 +31,7 @@ class ProductViewModel @Inject constructor(
 
     fun loadProducts() {
         viewModelScope.launch {
-            productRepository.getProducts(pageSize, currentPage * pageSize)
+            getProductsUseCase(pageSize, currentPage * pageSize)
                 .collect { result ->
                     _products.value = result
                     if (result is Resource.Success && result.data != null) {
