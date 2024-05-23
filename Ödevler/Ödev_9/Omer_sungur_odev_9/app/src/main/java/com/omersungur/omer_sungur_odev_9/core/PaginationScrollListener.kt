@@ -1,4 +1,4 @@
-package com.omersungur.omer_sungur_odev_9.presentation.common
+package com.omersungur.omer_sungur_odev_9.core
 
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
