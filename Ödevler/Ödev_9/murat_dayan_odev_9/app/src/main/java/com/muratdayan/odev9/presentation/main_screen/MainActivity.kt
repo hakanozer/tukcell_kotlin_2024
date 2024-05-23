@@ -1,6 +1,7 @@
 package com.muratdayan.odev9.presentation.main_screen
 
 import android.os.Bundle
+import android.util.Log
 import android.view.View
 import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
@@ -70,6 +71,7 @@ class MainActivity : AppCompatActivity() {
                             productState.errorMsg.toString(),
                             Toast.LENGTH_SHORT
                         ).show()
+                        Log.d("failure", "failure ${productState.errorMsg}")
                     }
                 }
             }
