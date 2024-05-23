@@ -1,6 +1,3 @@
-
-|-------|--------|
-| Paging | ![Paging]![1](https://github.com/hakanozer/tukcell_kotlin_2024/assets/83172478/e9c70d07-4770-4693-8e2a-e36b382d685c)
- |
-| Detail | ![Detail]![2](https://github.com/hakanozer/tukcell_kotlin_2024/assets/83172478/d875c24c-b541-470a-8864-f782a836eb22)
- |
+| Paging | Detail |
+|---------------|-----------------|
+| ![Paging](https://github.com/hakanozer/tukcell_kotlin_2024/assets/83172478/2319dc5f-71e1-4880-8829-ed839451103d) | ![Detail](https://github.com/hakanozer/tukcell_kotlin_2024/assets/83172478/5d84a737-e773-48a2-b641-f8ae3d2f1d84) |
