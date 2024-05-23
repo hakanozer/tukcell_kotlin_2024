@@ -11,11 +11,11 @@ import javax.inject.Inject
 
 class ProductRepositoryImpl @Inject constructor(
     private val productService: ProductService
-): ProductRepository {
+) : ProductRepository {
 
-    override fun getProducts(): Flow<Resource<ProductResult>> = flow {
+    override fun getProducts(limit: Int, skip: Int): Flow<Resource<ProductResult>> = flow {
         emit(Resource.Loading(isLoading = true))
-        val products = productService.getProducts()
+        val products = productService.getProductsWithPaging(limit, skip)
         emit(Resource.Success(data = products.toProductResult()))
     }
 }

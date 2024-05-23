@@ -7,5 +7,5 @@ import kotlinx.coroutines.flow.Flow
 
 interface ProductRepository {
 
-    fun getProducts(): Flow<Resource<ProductResult>>
+    fun getProducts(limit: Int, skip: Int): Flow<Resource<ProductResult>>
 }
