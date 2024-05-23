@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="ImageStyle_circle">
+        <item name="cornerSize">8%</item>
+        <item name="cornerFamily">rounded</item>
+    </style>
+    <style name="RatingBar" parent="Theme.AppCompat">
+        <item name="colorControlNormal">#D8D8D8</item>
+        <item name="colorControlActivated">#ffc000</item>
+    </style>
+</resources>
