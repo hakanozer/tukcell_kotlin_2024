@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">YunusEmreCeylan_Odev8</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="label_ingredients">Ingredients:</string>
+    <string name="label_instructions">Instructions:</string>
+    <string name="label_prep_time">Prep Time:</string>
+    <string name="label_cook_time">Cook Time:</string>
+    <string name="label_servings">Servings:</string>
+    <string name="label_difficulty">Difficulty:</string>
+    <string name="label_cuisine">Cuisine:</string>
+    <string name="label_calories_per_serving">Calories per Serving:</string>
+    <string name="label_rating">Rating:</string>
+    <string name="label_reviews">reviews</string>
+    <string name="label_tags">Tags:</string>
+    <string name="label_minutes">minutes</string>
+    <string name="placeholder_null">null</string>
+
+</resources>

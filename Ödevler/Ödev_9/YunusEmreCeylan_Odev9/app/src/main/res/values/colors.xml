@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Yeşil tonları -->
+    <color name="greenLight">#A5D6A7</color>
+    <color name="greenMedium">#4CAF50</color>
+    <color name="greenDark">#388E3C</color>
+
+    <!-- Diğer renkler -->
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+
+    <!-- Gri tonları -->
+    <color name="grayLight">#F5F5F5</color>
+    <color name="grayMedium">#CCCCCC</color>
+    <color name="grayDark">#666666</color>
+
+    <!-- Diğer renkler -->
+    <color name="red">#FF0000</color>
+    <color name="blue">#0000FF</color>
+    <color name="yellow">#FFFF00</color>
+</resources>
