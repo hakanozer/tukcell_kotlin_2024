@@ -1,6 +1,5 @@
 package com.omersungur.omer_sungur_odev_9.presentation.product_list
 
-import android.content.Context
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
@@ -9,7 +8,7 @@ import com.omersungur.omer_sungur_odev_9.databinding.ProductRowBinding
 import com.omersungur.omer_sungur_odev_9.domain.model.Product
 
 class ProductListAdapter(
-    private val userList: List<Product>
+    private val productList: MutableList<Product>
 ) : RecyclerView.Adapter<ProductListAdapter.ProductViewHolder>() {
 
     class ProductViewHolder(val binding: ProductRowBinding) : RecyclerView.ViewHolder(binding.root)
@@ -21,11 +20,17 @@ class ProductListAdapter(
     }
 
     override fun onBindViewHolder(holder: ProductViewHolder, position: Int) {
-        val product = userList[position]
+        val product = productList[position]
 
         holder.binding.textView.text = product.title
         Glide.with(holder.itemView.context).load(product.thumbnail).into(holder.binding.imageView)
     }
 
-    override fun getItemCount(): Int = userList.size
+    override fun getItemCount(): Int = productList.size
+
+    fun addProducts(newProducts: List<Product>) {
+        val oldItemCount = itemCount
+        productList.addAll(newProducts)
+        notifyItemRangeInserted(oldItemCount, newProducts.size)
+    }
 }
