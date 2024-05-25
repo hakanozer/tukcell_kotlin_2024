@@ -21,5 +21,13 @@ class ContactService(context: Context) : DB(context) {
         return effectRow
     }
 
+    fun deleteContanct(cid: Int) : Int {
+        val db = this.writableDatabase
+        val deleteStatus = db.delete("contacts", "cid = $cid", null)
+        //val deleteStatus = db.delete("contacts", "name = ?, surname = ?", arrayOf("ali", "bilmem"))
+        db.close()
+        return deleteStatus
+    }
+
 
 }

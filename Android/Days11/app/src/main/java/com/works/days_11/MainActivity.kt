@@ -15,8 +15,11 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         val contactService = ContactService(this)
-        val status = contactService.addContanct("Ali", "Bilmem", 30, "red")
-        Log.d("addContanct", "$status")
+        //val status = contactService.addContanct("Ali", "Bilmem", 30, "red")
+        //Log.d("addContanct", "$status")
+
+        val deleteStatus = contactService.deleteContanct(3)
+        Log.d("deleteStatus", "$deleteStatus")
 
     }
 }
