@@ -1,0 +1,12 @@
+Teslim Tarihi: 01 Haziran 2024 - Saat: 23:59
+
+Şifreli giriş olacak şekilde bir not tutma uygulaması yapmanız beklenmektedir.
+Kullanıcı ilk girişte kullanıcı adı ve şifre belirlemedi ise belirleyecek ve notlarını girmeye başkayacaktır. Uygulamayı kapatık tekrar açtığında tekrar kullanıcı adı ve şifre girişi ile uygulamayı kullanacaktır.
+
+Kurallar:
+Not ekleme
+Not düzenleme
+Not listeleme
+Not arama
+Not silme özellikleri olacaktır.
+
