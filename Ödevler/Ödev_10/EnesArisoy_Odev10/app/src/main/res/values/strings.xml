@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">EnesArisoy_Odev11</string>
+    <string name="searchbar_hint">Search for notes</string>
+</resources>
