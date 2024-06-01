@@ -1,0 +1,3 @@
+kullanıcı adı ve şifre herkese özel olacak.
+Eğer yanlış şifre verirsek yeni ve farklı bir kullanıcı oluşur
+doğru şifre ile girersek program bizi hatırlar ve notlarımızı getirir

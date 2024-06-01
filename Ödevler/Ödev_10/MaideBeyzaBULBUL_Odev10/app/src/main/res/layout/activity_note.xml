@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <EditText
+        android:id="@+id/note_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Not Başlığı" />
+
+    <EditText
+        android:id="@+id/note_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Not İçeriği" />
+
+    <Button
+        android:id="@+id/add_note_button"
+        android:layout_width="122dp"
+        android:layout_height="60dp"
+        android:text="Not Ekle" />
+
+    <EditText
+        android:id="@+id/search_note"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Not Ara" />
+
+    <Button
+        android:id="@+id/search_button"
+        android:layout_width="122dp"
+        android:layout_height="60dp"
+        android:text="Ara" />
+
+    <ListView
+        android:id="@+id/notes_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <Button
+        android:id="@+id/add_note_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Not Ekle"
+        android:onClick="onAddNoteClick" />
+</LinearLayout>
