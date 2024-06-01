@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/loginFragment">
+
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.selincengiz.selin_cengiz_odev10.presentation.login.LoginFragment"
+        android:label="LoginFragment" >
+        <action
+            android:id="@+id/loginToSignUp"
+            app:destination="@id/signUpFragment" />
+        <action
+            android:id="@+id/loginToHome"
+            app:destination="@id/homeFragment"
+            app:popUpTo="@id/nav_graph"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/signUpFragment"
+        android:name="com.selincengiz.selin_cengiz_odev10.presentation.signup.SignUpFragment"
+        android:label="SignUpFragment" >
+        <action
+            android:id="@+id/signUpToLogin"
+            app:destination="@id/loginFragment" />
+        <action
+            android:id="@+id/signUpToHome"
+            app:destination="@id/homeFragment"
+            app:popUpTo="@id/homeFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.selincengiz.selin_cengiz_odev10.presentation.home.HomeFragment"
+        android:label="HomeFragment" >
+        <action
+            android:id="@+id/homeToNote"
+            app:destination="@id/noteFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/noteFragment"
+        android:name="com.selincengiz.selin_cengiz_odev10.presentation.note.NoteFragment"
+        android:label="NoteFragment" >
+        <argument
+            android:name="note"
+            app:argType="com.selincengiz.selin_cengiz_odev10.domain.entities.NotesUI"
+            app:nullable="true" />
+    </fragment>
+</navigation>
