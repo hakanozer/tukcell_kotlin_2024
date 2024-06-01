@@ -3,6 +3,7 @@ plugins {
     alias(libs.plugins.jetbrains.kotlin.android)
     alias(libs.plugins.dagger.hilt.android)
     alias(libs.plugins.navigationSafeargsKotlin)
+    id("com.google.devtools.ksp")
     id("kotlin-kapt")
 }
 
@@ -55,9 +56,9 @@ dependencies {
     implementation(libs.androidx.navigation.ui.ktx)
 
     // Room
-    implementation ("androidx.room:room-runtime:2.6.1")
-    kapt("androidx.room:room-compiler:2.6.1")
-    implementation("androidx.room:room-ktx:2.6.1")
+    implementation(libs.androidx.room.runtime)
+    ksp(libs.androidx.room.compiler)
+    implementation(libs.androidx.room.ktx)
 
     // View Model
     implementation(libs.androidx.lifecycle.viewmodel.ktx)
