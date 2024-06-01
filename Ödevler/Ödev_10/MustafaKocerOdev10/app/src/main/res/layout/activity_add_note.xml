@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activitiy.AddNoteActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbarAddNote"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/lite_green"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:title="Add Note" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="@id/toolbarAddNote"
+        app:layout_constraintStart_toStartOf="@id/toolbarAddNote"
+        app:layout_constraintTop_toBottomOf="@id/toolbarAddNote"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:padding="10dp">
+
+            <EditText
+                android:id="@+id/edtTxtTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/custom_edit_text"
+                android:ems="10"
+                android:hint="Title"
+                android:inputType="text"
+                android:minHeight="48dp"
+                android:padding="10dp"
+                android:textColor="@android:color/black"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <EditText
+                android:layout_marginTop="5dp"
+                android:id="@+id/edtTxtDesc"
+                android:layout_width="match_parent"
+                android:layout_height="400dp"
+                android:background="@drawable/custom_edit_text"
+                android:ems="10"
+                android:gravity="start|top"
+                android:hint="Description"
+                android:inputType="textMultiLine"
+                android:padding="10dp"
+                android:scrollbars="vertical"
+
+                android:textColor="@android:color/black"
+                app:layout_constraintEnd_toEndOf="@id/edtTxtTitle"
+                app:layout_constraintStart_toStartOf="@id/edtTxtTitle"
+                app:layout_constraintTop_toBottomOf="@id/edtTxtTitle" />
+
+            <Button
+                android:id="@+id/btnAddNotes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:padding="10dp"
+                android:text="Add Note"
+                app:layout_constraintEnd_toEndOf="@id/edtTxtDesc"
+                app:layout_constraintStart_toStartOf="@id/edtTxtDesc"
+                app:layout_constraintTop_toBottomOf="@id/edtTxtDesc" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
