@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">Odev_10</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="login">Login</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="add_note">Add Note</string>
+    <string name="title">Title</string>
+    <string name="content">Content</string>
+    <string name="delete">Delete</string>
+    <string name="save">Save</string>
+    <string name="update">Update</string>
+    <string name="day_month_year">day/month/year</string>
+    <string name="logout">Logout</string>
+    <string name="delete_all">Delete All</string>
+    <string name="menu_button">menu button</string>
+    <string name="save_note">Save note</string>
+    <string name="update_note">Update Note</string>
+    <string name="delete_note">Delete Note</string>
+
+    <string-array name="priorities">
+        <item>High Priority</item>
+        <item>Medium Priority</item>
+        <item>Low Priority</item>
+    </string-array>
+</resources>
