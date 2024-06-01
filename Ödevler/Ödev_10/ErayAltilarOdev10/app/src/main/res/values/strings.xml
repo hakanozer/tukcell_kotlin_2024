@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">Eray-Altilar-Odev-10</string>
+
+    <!---    Main Screen -->
+    <string name="kullan_c_ad_veya_ifre_hatal">Kullanıcı adı veya şifre hatalı</string>
+    <string name="loginstatus">LoginStatus</string>
+    <string name="userid">userId</string>
+
+    <!---    Sign Up Screen -->
+    <string name="username_already_exists">Username Already Exists</string>
+    <string name="passwords_doesn_t_match">Passwords Doesn\'t Match</string>
+    <string name="basarili_giris_yonlendiriliyorsunuz">Başarılı giriş ! Yönlendiriliyorsunuz...</string>
+    <string name="adduser">addUser</string>
+    <string name="userid_intent_key">userId</string>
+    <string name="note_added">Note added</string>
+
+    <!---    Homepage Screen -->
+    <string name="bir_eyler_yaz">Birşeyler yaz</string>
+    <string name="not_silinirken_hata_olu_tu">Not silinirken hata oluştu</string>
+    <string name="not_silindi">Not silindi !</string>
+    <string name="not_g_ncellendi">Not güncellendi</string>
+    <string name="ba_l_k_bo_olamaz">Başlık boş olamaz</string>
+    <string name="ptal">İptal</string>
+</resources>
