@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/splashFragment">
+
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.muratdayan.odev10.presentation.login.LoginFragment"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login" >
+        <action
+            android:id="@+id/navigate_loginFragment_to_notesFragment"
+            app:popUpTo="@id/notesFragment"
+            app:popUpToInclusive="true"
+            app:destination="@id/notesFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/notesFragment"
+        android:name="com.muratdayan.odev10.presentation.notes.NotesFragment"
+        android:label="fragment_notes"
+        tools:layout="@layout/fragment_notes" >
+        <action
+            android:id="@+id/navigate_notesFragment_to_notesAddEditFragment"
+            app:destination="@id/notesAddEditFragment" />
+        <action
+            android:id="@+id/navigate_notesFragment_to_loginFragment"
+            app:popUpTo="@id/notesFragment"
+            app:popUpToInclusive="true"
+            app:destination="@id/loginFragment" />
+        <argument
+            android:name="note"
+            app:argType="com.muratdayan.odev10.models.Note"
+            app:nullable="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/notesAddEditFragment"
+        android:name="com.muratdayan.odev10.presentation.notes_add_edit.NotesAddEditFragment"
+        android:label="fragment_notes_add_edit"
+        tools:layout="@layout/fragment_notes_add_edit" >
+        <action
+            android:id="@+id/navigate_notesAddEditFragment_to_notesFragment"
+            app:destination="@id/notesFragment" />
+        <argument
+            android:name="noteData"
+            app:argType="com.muratdayan.odev10.models.Note"
+            app:nullable="true"
+            android:defaultValue="@null"/>
+    </fragment>
+    <fragment
+        android:id="@+id/splashFragment"
+        android:name="com.muratdayan.odev10.presentation.splash.SplashFragment"
+        android:label="fragment_splash"
+        tools:layout="@layout/fragment_splash" >
+        <action
+            android:id="@+id/navigate_splashFragment_to_notesFragment"
+            app:destination="@id/notesFragment"
+            app:popUpTo="@id/splashFragment"
+            app:popUpToInclusive="true"/>
+        <action
+            android:id="@+id/navigate_splashFragment_to_loginFragment"
+            app:destination="@id/loginFragment"
+            app:popUpTo="@id/splashFragment"
+            app:popUpToInclusive="true"/>
+    </fragment>
+</navigation>

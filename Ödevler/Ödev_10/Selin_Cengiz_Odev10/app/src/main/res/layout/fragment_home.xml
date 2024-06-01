@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="homeFunctions"
+            type="com.selincengiz.selin_cengiz_odev10.presentation.home.HomeFragment" />
+
+    </data>
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".presentation.home.HomeFragment">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:background="@color/background"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <SearchView
+                android:id="@+id/search_view"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/_35sdp"
+                android:layout_margin="@dimen/_14sdp"
+                android:alpha="0.5"
+                android:background="@drawable/searchview_background"
+                android:iconifiedByDefault="false"
+                android:paddingStart="@dimen/_6sdp"
+                android:queryBackground="@null"
+                android:queryHint="@string/searchview_hint"
+                android:searchHintIcon="@null"
+                android:searchIcon="@drawable/ic_search"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/listView"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginTop="@dimen/_20sdp"
+                app:layoutManager="androidx.recyclerview.widget.StaggeredGridLayoutManager"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/search_view"
+                app:spanCount="2"
+                tools:listitem="@layout/item_note" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <com.selincengiz.selin_cengiz_odev10.presentation.fab.MovableFloatingActionButton
+            android:id="@+id/add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:layout_marginEnd="@dimen/_5sdp"
+            android:layout_marginBottom="@dimen/_95sdp"
+            android:backgroundTint="@color/yellow"
+            android:clickable="true"
+            android:onClick="@{() -> homeFunctions.addClicked()}"
+            app:srcCompat="@drawable/ic_add" />
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+</layout>

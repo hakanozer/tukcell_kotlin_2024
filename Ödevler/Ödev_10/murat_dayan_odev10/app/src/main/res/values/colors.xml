@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="red">#FFA41F13</color>
+    <color name="backgroundWhite">#FFFAF5F1</color>
+    <color name="gray">#FFE0DBDB</color>
+    <color name="appBlack">#FF292F36</color>
+    <color name="coffee">#FF8F7A6E</color>
+    <color name="transparent">#00000000</color>
+    <color name="green">#B1FF56</color>
+    <color name="myGreen">#FFC4FFCA</color>
+    <color name="yellow">#FFEC47</color>
+    <color name="myRed">#FFE8505B</color>
+    <color name="myYellow">#FFFDF3BF</color>
+    <color name="myCyan">#FF96F4F4</color>
+    <color name="myPink">#FFFEC5FF</color>
+    <color name="myBlue">#FFC5CBFF</color>
+    <color name="myDarkPink">#FFFBBECF</color>
+    <color name="myBlack">#FF646464</color>
+    <color name="myGray">#FF818181</color>
+
+</resources>

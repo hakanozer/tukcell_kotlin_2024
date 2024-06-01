@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="lite_green">#B8F4BB</color>
+    <color name="lite_blue">#C3E3F1</color>
+    <color name="lite_grey">#A6A9AB</color>
+    <color name="dark_grey">#979A9D</color>
+
+    <color name="toolbar_color">#3F51B5</color>
+    <color name="button_color">#303F9F</color>
+    <color name="light_gray">#F5F5F5</color>
+
+    <color name="primaryButtonColor">#1E88E5</color> <!-- Mavi renk -->
+    <color name="secondaryButtonColor">#42A5F5</color> <!-- Açık mavi renk -->
+</resources>

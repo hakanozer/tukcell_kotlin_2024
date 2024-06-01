@@ -1,0 +1,11 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.Selin_Cengiz_Odev10" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+       <item name="colorPrimary">@color/yellow</item>
+        <item name="colorOnPrimary">@color/yellow</item>
+        <item name="colorPrimaryDark">@color/background</item>
+    </style>
+
+    <style name="Theme.Selin_Cengiz_Odev10" parent="Base.Theme.Selin_Cengiz_Odev10" />
+</resources>

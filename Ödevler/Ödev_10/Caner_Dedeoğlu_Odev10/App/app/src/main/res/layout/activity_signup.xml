@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical"
+    tools:context=".SignupActivity">
+
+    <!-- "New Account" TextView -->
+    <TextView
+        android:id="@+id/edit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:text="New Account"
+        android:textColor="@color/lavender"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="#FFFFFF"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <!-- Name EditText -->
+        <EditText
+            android:id="@+id/signup_name"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/edittext_bkg"
+            android:drawablePadding="8dp"
+            android:hint="Name"
+            android:padding="8dp" />
+
+        <!-- Surname EditText -->
+        <EditText
+            android:id="@+id/signup_surname"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/edittext_bkg"
+            android:drawablePadding="8dp"
+            android:hint="Surname"
+            android:padding="8dp" />
+
+        <!-- Username EditText -->
+        <EditText
+            android:id="@+id/signup_username"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/edittext_bkg"
+            android:drawablePadding="8dp"
+            android:hint="Username"
+            android:padding="8dp" />
+
+        <!-- Email EditText -->
+        <EditText
+            android:id="@+id/signup_email"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/edittext_bkg"
+            android:drawableLeft="@drawable/ic_email"
+            android:drawablePadding="8dp"
+            android:hint="Email"
+            android:padding="8dp" />
+
+        <!-- Password EditText -->
+        <EditText
+            android:id="@+id/signup_password"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/edittext_bkg"
+            android:drawableLeft="@drawable/ic_password"
+            android:drawablePadding="8dp"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:padding="8dp" />
+
+        <!-- Confirm Password EditText -->
+        <EditText
+            android:id="@+id/signup_confirm"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/edittext_bkg"
+            android:drawableLeft="@drawable/ic_lock"
+            android:drawablePadding="8dp"
+            android:hint="Confirm Password"
+            android:inputType="textPassword"
+            android:padding="8dp" />
+
+        <!-- Signup Button -->
+        <Button
+            android:id="@+id/signup_button"
+            android:layout_width="250dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:backgroundTint="@color/lavender"
+            android:text="Sign Up"
+            android:textSize="18sp"
+            app:cornerRadius="30dp" />
+    </LinearLayout>
+
+</LinearLayout>

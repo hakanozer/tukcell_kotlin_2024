@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/actionHigh"
+        android:title="HIGH" />
+    <item
+        android:id="@+id/actionMedium"
+        android:title="MEDIUM" />
+    <item
+        android:id="@+id/actionLow"
+        android:title="LOW" />
+</menu>

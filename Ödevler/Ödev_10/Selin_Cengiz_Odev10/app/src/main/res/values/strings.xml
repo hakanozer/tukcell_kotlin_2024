@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Selin_Cengiz_Odev10</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="todo">ToDo  </string>
+    <string name="app">App</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="already_have">Already have an account? Login</string>
+    <string name="not_register">Not register yet? Create Account</string>
+    <string name="register">Register</string>
+    <string name="login">Login</string>
+    <string name="password_confirm">Password Confirm</string>
+    <string name="password">Password</string>
+    <string name="email">Email</string>
+    <string name="searchview_hint">Kotlin Compose..</string>
+    <string name="lorem">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut interdum risus quis tellus blandit ornare. In quis nunc vel mauris gravida vulputate. Suspendisse rhoncus tempus sem, non luctus ante tempus non. Nunc placerat vehicula orci, ultrices vestibulum mauris suscipit eget. Donec ligula dui, sodales varius sodales et, mattis quis nisi. Phasellus porta hendrerit enim, sit amet cursus justo luctus finibus. In pretium id libero eu sodales. Fusce porttitor nibh rutrum mi dictum sollicitudin. </string>
+</resources>

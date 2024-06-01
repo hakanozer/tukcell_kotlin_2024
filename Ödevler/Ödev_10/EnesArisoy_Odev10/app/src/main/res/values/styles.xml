@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="ShapeAppearanceOverlay.MyApp.Button.Rounded" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">50%</item>
+    </style>
+
+    <style name="TextInputLayoutStyle" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="boxStrokeWidth">0dp</item>
+        <item name="hintEnabled">false</item>
+    </style>
+
+    <style name="TextInputEditText" parent="Widget.Material3.TextInputEditText.OutlinedBox">
+        <item name="android:textColor">#7C7C7C</item>
+        <item name="android:textColorHint">#7C7C7C</item>
+        <item name="android:textSize">14sp</item>
+        <item name="fontFamily">@font/product_sans_regular</item>
+        <item name="android:background">#F0F0F0</item>
+    </style>
+</resources>

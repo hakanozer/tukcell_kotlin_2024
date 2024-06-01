@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">YunusEmreCeylan_Odev10</string>
+    <string name="register">Register</string>
+    <string name="password">Password</string>
+    <string name="username">Username</string>
+    <string name="login">Login</string>
+    <string name="don_t_have_an_account">Don\'t have an account?</string>
+    <string name="register_here">Register here</string>
+    <string name="search_notes">Search notes</string>
+    <string name="plus">+</string>
+    <string name="title">Title</string>
+    <string name="content">Content</string>
+    <string name="edit">Edit</string>
+    <string name="delete">Delete</string>
+    <string name="password_again">Password Again:</string>
+    <string name="title_is_required">Title is required</string>
+    <string name="content_is_required">Content is required</string>
+    <string name="add_note">Add Note</string>
+    <string name="add">Add</string>
+    <string name="cancel">Cancel</string>
+    <string name="username_already_exists">Username already exists.</string>
+    <string name="passwords_do_not_match">Passwords do not match</string>
+    <string name="username_cannot_be_empty">Username cannot be empty</string>
+    <string name="password_cannot_be_empty">Password cannot be empty</string>
+    <string name="confirm_password_cannot_be_empty">Confirm Password cannot be empty</string>
+    <string name="registration_error">Registration Error</string>
+    <string name="ok">OK</string>
+    <string name="login_error">Login Error</string>
+    <string name="user_not_found_do_you_want_to_register">User not found. Do you want to register?</string>
+</resources>

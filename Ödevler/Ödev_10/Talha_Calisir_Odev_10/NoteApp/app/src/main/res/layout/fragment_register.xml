@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".view.RegisterFragment">
+
+
+    <EditText
+        android:id="@+id/req_name"
+        android:layout_width="308dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="184dp"
+        android:layout_marginEnd="88dp"
+        android:ems="10"
+        android:hint="Enter Your Username Please"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/req_password"
+        android:layout_width="305dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="88dp"
+        android:ems="10"
+        android:hint="Enter Your Password Please"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/req_name" />
+
+    <EditText
+        android:id="@+id/editTextText4"
+        android:layout_width="306dp"
+        android:layout_height="52dp"
+        android:layout_marginEnd="88dp"
+        android:layout_marginBottom="340dp"
+        android:ems="10"
+        android:hint="Enter Your  Email Please"
+        android:inputType="text"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/register_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
+        android:layout_marginEnd="164dp"
+        android:onClick="register"
+        android:text="Register"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextText4" />
+
+    <ImageButton
+        android:id="@+id/backButton"
+        android:layout_width="37dp"
+        android:layout_height="33dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:background="#FFFFFF"
+        android:src="?attr/homeAsUpIndicator"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
