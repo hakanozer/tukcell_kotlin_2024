@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <com.tistory.zladnrms.roundablelayout.RoundableLayout
+        android:layout_width="@dimen/_155sdp"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_10sdp"
+        android:elevation="@dimen/_1sdp"
+        app:cornerAll="@dimen/_10sdp">
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:textSize="@dimen/_16ssp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="Title" />
+
+        <TextView
+            android:id="@+id/tv_body"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_10sdp"
+            android:maxHeight="@dimen/_180sdp"
+            android:minHeight="@dimen/_100sdp"
+            android:textSize="@dimen/_14ssp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_title"
+            tools:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut interdum risus quis tellus blandit ornare. In quis nunc vel mauris gravida vulputate. Suspendisse rhoncus tempus sem, non luctus ante tempus non. Nunc placerat vehicula orci, ultrices vestibulum mauris suscipit eget. Donec ligula dui, sodales varius sodales et, mattis quis nisi. Phasellus porta hendrerit enim, sit amet cursus justo luctus finibus. In pretium id libero eu sodales. Fusce porttitor nibh rutrum mi dictum sollicitudin. " />
+
+    </com.tistory.zladnrms.roundablelayout.RoundableLayout>
+</layout>
