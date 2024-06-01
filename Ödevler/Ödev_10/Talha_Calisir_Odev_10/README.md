@@ -8,3 +8,4 @@ NoteApp: Used sharedpreferences for who has already logged in logout, exit app f
 Recipe App: Handled permission request to gallery for API level >30 and <30. picture size reduced  and turned to a bitmap to show the user, same approach with noteapp  to show the details of the food recipe added to database and showed with recycler view
 ![Screenshot 2024-05-29 021400](https://github.com/hakanozer/tukcell_kotlin_2024/assets/70065773/65f66acb-b465-4970-a56c-5514b244810b)
 ![123](https://github.com/hakanozer/tukcell_kotlin_2024/assets/70065773/1c2308d1-a5f7-429e-b567-90012cfd7f02)
+![123123](https://github.com/hakanozer/tukcell_kotlin_2024/assets/70065773/f25f65a6-486a-4b03-ac0e-092958156e92)
