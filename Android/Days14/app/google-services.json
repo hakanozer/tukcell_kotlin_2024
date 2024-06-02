@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "426701902001",
+    "project_id": "days-14-6fdd7",
+    "storage_bucket": "days-14-6fdd7.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:426701902001:android:c2472bee6d2e5201195290",
+        "android_client_info": {
+          "package_name": "com.works.days_14"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDqf38X-f6MvRqfQvBlswmoHgE1bnUxABY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
