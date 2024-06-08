@@ -8,13 +8,15 @@ import androidx.activity.enableEdgeToEdge
 import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.lifecycleScope
-import com.tlh.dicevm.viewmodel.RollViewmodel
+import com.tlh.dicevm.repository.DiceRollRepositoryImpl
+import com.tlh.dicevm.viewmodel.RollViewModel
+import com.tlh.dicevm.viewmodel.RollViewModelFactory
 import kotlinx.coroutines.launch
 
 class MainActivity : AppCompatActivity() {
-    lateinit var button: Button
-    lateinit var text: TextView
-
+    private lateinit var button: Button
+    private lateinit var text: TextView
+    private lateinit var text2: TextView
 
     @SuppressLint("ClickableViewAccessibility")
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -24,17 +26,22 @@ class MainActivity : AppCompatActivity() {
 
         button = findViewById(R.id.button)
         text = findViewById(R.id.textView)
-        val viewmodel: RollViewmodel by viewModels()
-        lifecycleScope.launch {
-            viewmodel.uiState.collect { roll ->
-                button.setOnClickListener {
-                //   roll.rollOne = (1..6).random()
-                    viewmodel.rollDice()
-                    text.text = roll.rollOne.toString()
-                }
-            }
+        text2 = findViewById(R.id.textView2)
+
+
+        val repository = DiceRollRepositoryImpl()
+        val factory = RollViewModelFactory(repository)
+        val viewmodel: RollViewModel by viewModels { factory }
+
+        button.setOnClickListener {
+            viewmodel.rollDices()
         }
 
-
+        lifecycleScope.launch {
+            viewmodel.uiState.collect { roll ->
+                text.text = roll.rollOne.toString()
+                text2.text = roll.rollTwo.toString()
+            }
+        }
     }
 }
