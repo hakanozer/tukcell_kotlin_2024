@@ -11,5 +11,5 @@ Recipe App: Handled permission request to gallery for API level >30 and <30. pic
 ![123123](https://github.com/hakanozer/tukcell_kotlin_2024/assets/70065773/f25f65a6-486a-4b03-ac0e-092958156e92)
 
 
-                                                                                              DiceVm
+                                                                                    DiceVm
 In dicevm ı trained how to use mvvm (ui layer) with viewmodels. After I succeed added (data layer) repository also added viewmodelfactory for manage dependency because of parameters![hele](https://github.com/hakanozer/tukcell_kotlin_2024/assets/70065773/506b1a63-c4f2-4660-8547-090f87f60192)
