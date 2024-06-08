@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<defaultsMap>
+
+    <entry>
+        <key>backgroundColor</key>
+        <value>#ffffff</value>
+    </entry>
+
+    <entry>
+        <key>title</key>
+        <value>App Title</value>
+    </entry>
+
+</defaultsMap>
