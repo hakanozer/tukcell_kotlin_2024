@@ -7,18 +7,25 @@ import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
+import com.google.firebase.Firebase
+import com.google.firebase.FirebaseApp
 import com.google.firebase.database.DataSnapshot
 import com.google.firebase.database.DatabaseError
 import com.google.firebase.database.FirebaseDatabase
 import com.google.firebase.database.ValueEventListener
+import com.google.firebase.remoteconfig.ConfigUpdate
+import com.google.firebase.remoteconfig.ConfigUpdateListener
 import com.google.firebase.remoteconfig.FirebaseRemoteConfig
+import com.google.firebase.remoteconfig.FirebaseRemoteConfigException
+import com.google.firebase.remoteconfig.remoteConfig
+import com.google.firebase.remoteconfig.remoteConfigSettings
 import com.works.days_14.models.Product
 import com.works.days_14.models.ProductVal
 
 
 class MainActivity : AppCompatActivity() {
 
-    lateinit var remoteConfig: FirebaseRemoteConfig
+    //lateinit var remoteConfig: FirebaseRemoteConfig
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -29,7 +36,7 @@ class MainActivity : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
-
+        /*
         // Firebase DB
         val db = FirebaseDatabase.getInstance().getReference("products")
 
@@ -91,6 +98,7 @@ class MainActivity : AppCompatActivity() {
         //db.child("keyID").removeValue();
         // update
         //db.child("keyID").setValue(null)
+         */
 
         // Remote config
         /*
@@ -98,44 +106,55 @@ class MainActivity : AppCompatActivity() {
         remoteConfig.setDefaultsAsync(R.xml.remote_config_defaults)
         fetch()
          */
-        val firebaseRemoteConfig = FirebaseRemoteConfig.getInstance()
-        // Set default values (fallback when values are not available)
-        val defaults: Map<String, Any> = mapOf(
-            "welcome_message" to "Welcome to our app!",
-            // Add more default values here
-        )
-        firebaseRemoteConfig.setDefaultsAsync(defaults)
-            .addOnCompleteListener { task ->
+        FirebaseApp.initializeApp(this)
+
+        // Initialize Firebase Remote Config
+        val remoteConfig: FirebaseRemoteConfig = Firebase.remoteConfig
+        val configSettings = remoteConfigSettings {
+            minimumFetchIntervalInSeconds = 3600
+        }
+        remoteConfig.setConfigSettingsAsync(configSettings)
+        remoteConfig.setDefaultsAsync(R.xml.remote_config_defaults)
+        remoteConfig.fetchAndActivate()
+            .addOnCompleteListener(this) { task ->
+                // Handle the updated status if needed
                 if (task.isSuccessful) {
-                    // Fetch remote configs
-                    firebaseRemoteConfig.fetchAndActivate()
-                        .addOnCompleteListener { fetchTask ->
-                            if (fetchTask.isSuccessful) {
-                                // Remote configs fetched and activated
-                                val welcomeMessage = firebaseRemoteConfig.getString("welcome_message")
-                                // Use welcomeMessage in your app
-                                Log.d("welcomeMessage", welcomeMessage)
-                            } else {
-                                // Fetch failed
-                            }
-                        }
+                    val updated = task.result
+                    Log.e("Datax", "Config params updated: $updated")
+                    Toast.makeText(
+                        this,
+                        "Fetch and activate succeeded",
+                        Toast.LENGTH_SHORT,
+                    ).show()
                 } else {
-                    // Set defaults failed
+                    Toast.makeText(
+                        this,
+                        "Fetch failed",
+                        Toast.LENGTH_SHORT,
+                    ).show()
                 }
             }
-    }
+        //val color = FirebaseRemoteConfig.getInstance().getString("color")
+        remoteConfig.addOnConfigUpdateListener(object : ConfigUpdateListener {
+            override fun onUpdate(configUpdate: ConfigUpdate) {
+                Log.e("onUpdate", "Updated keys: " + configUpdate.updatedKeys)
 
-    fun fetch() {
-        val time:Long = 3600
-        remoteConfig.fetch(time)
-            .addOnCompleteListener {
-                if (it.isSuccessful) {
-                    remoteConfig.activate()
-
-                    val backColor = remoteConfig.getString("backgroundColor")
-                    Log.d("backColor", backColor)
-                    //this@MainActivity
+                if (configUpdate.updatedKeys.contains("backgroundColor")) {
+                    remoteConfig.activate().addOnCompleteListener {
+                        if (it.isSuccessful) {
+                            val color = FirebaseRemoteConfig.getInstance().getString("backgroundColor")
+                            Log.d("Pull Color", color)
+                        }
+                    }
                 }
             }
+
+            override fun onError(error: FirebaseRemoteConfigException) {
+                Log.w("onError", "Config update error with code: " + error.code, error)
+            }
+        })
+
     }
+
+
 }
