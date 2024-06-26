@@ -2,6 +2,7 @@
 
 ## 📸 Screenshots
 <p align="center">
+  
   ![openingscreen](https://github.com/hakanozer/tukcell_kotlin_2024/assets/70065773/8494a425-ca08-4ce2-b5da-df8e69b82b4b)
   ![permissionreq](https://github.com/hakanozer/tukcell_kotlin_2024/assets/70065773/694dd9be-e9b1-4fbc-866c-12c3816e8f64)
   ![notifexmp](https://github.com/hakanozer/tukcell_kotlin_2024/assets/70065773/640eff8f-3969-4306-b6a8-bd2c6c04f4e4)
@@ -23,10 +24,19 @@
   ![zprofile-1](https://github.com/hakanozer/tukcell_kotlin_2024/assets/70065773/91540bb6-bde7-4a9e-934e-81e80445c0b6)
   ![zprofile2](https://github.com/hakanozer/tukcell_kotlin_2024/assets/70065773/c56c17ac-e91f-4256-b0c3-4ffe720eb805)
   ![editprofile](https://github.com/hakanozer/tukcell_kotlin_2024/assets/70065773/8ee025f0-9630-4628-af41-cc0ecb4ff373)
- 
- ![animfornavigations](https://github.com/hakanozer/tukcell_kotlin_2024/assets/70065773/697e0733-e5df-4adc-ac0d-ae28f85c2a5c)
-
+  ![animfornavigations](https://github.com/hakanozer/tukcell_kotlin_2024/assets/70065773/697e0733-e5df-4adc-ac0d-ae28f85c2a5c)
+  ![firebasenotifsc](https://github.com/hakanozer/tukcell_kotlin_2024/assets/70065773/5582bc4b-35e3-4171-9cae-07c7c5ca7431)
+  ![firecrashl](https://github.com/hakanozer/tukcell_kotlin_2024/assets/70065773/22ba6d43-b69b-4b9b-9ab5-1b8ff9c27f75)
+  ![fireperform](https://github.com/hakanozer/tukcell_kotlin_2024/assets/70065773/f8972c26-6c41-41d8-aab7-11a570c6d08f)
+  ![incomingnotif](https://github.com/hakanozer/tukcell_kotlin_2024/assets/70065773/09753259-f0b4-4578-87f7-94901ee4ddd7)
+  ![recoveryaccount](https://github.com/hakanozer/tukcell_kotlin_2024/assets/70065773/4dfa4060-10d7-4e83-a7f6-57ca10c56f38)
+  ![room](https://github.com/hakanozer/tukcell_kotlin_2024/assets/70065773/707b33d1-36df-4225-ad26-c4e86822de56)
+  ![sendrecoverymail](https://github.com/hakanozer/tukcell_kotlin_2024/assets/70065773/f3aed052-5d05-4b57-ad7e-33ae0b1b1a8c)
+  ![testing](https://github.com/hakanozer/tukcell_kotlin_2024/assets/70065773/bd4270e7-d94f-4859-8815-2f75debf5dff)  
+  ![tracing](https://github.com/hakanozer/tukcell_kotlin_2024/assets/70065773/0b5fd424-1b2d-43e7-9893-e720d22c4fcd)
 </p>
+
+
   
 ## 📽 Video 
 
