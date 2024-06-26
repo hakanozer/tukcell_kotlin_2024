@@ -30,8 +30,9 @@
 - Firebase Analytics
 - Firebase Performance-Tracing
 - Google Permissions
+-Google Services
 - Animations
-- 
+
 ## 📸 Screenshots
 <p align="center">
   
