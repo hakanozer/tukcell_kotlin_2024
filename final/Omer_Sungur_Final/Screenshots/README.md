@@ -1,5 +1,26 @@
 Project -> https://github.com/omersungur/Browse-Buy
 
+# <p align="center"> Browse & Buy </p>  
+
+## :point_down: Structures Used
+- MVVM + Clean Architecture
+- Jetpack Compose
+- XML
+- Navigation Compose
+- Retrofit
+- Coroutines
+- Flow
+- Gson
+- Hilt
+- Coil
+- Firebase Cloud Messaging
+- Firebase Authentication
+- Firebase Remote Config
+- Room
+- Chucker
+- Push Notification
+<br>
+
 <img src="https://github.com/hakanozer/tukcell_kotlin_2024/assets/70448538/e7dc59b2-b4ac-4c4a-bcf0-748325e49560" alt="Screenshot_1694509493" width="250" height="auto">
 <img src="https://github.com/hakanozer/tukcell_kotlin_2024/assets/70448538/0e385f40-c5ac-49d3-8c3c-f95ad234fa2a" alt="Screenshot_1694509493" width="250" height="auto">
 <img src="https://github.com/hakanozer/tukcell_kotlin_2024/assets/70448538/c584169e-3200-42c6-ac30-810cf9438bbb" alt="Screenshot_1694509493" width="250" height="auto">
