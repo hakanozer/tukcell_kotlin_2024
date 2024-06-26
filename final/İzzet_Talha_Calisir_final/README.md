@@ -71,5 +71,7 @@
 
 
   
-## 📽 Video 
+## 📽 Video
+https://github.com/hakanozer/tukcell_kotlin_2024/assets/70065773/be508f93-92a8-4e0b-b98c-230c3cc7aa10
+
 
