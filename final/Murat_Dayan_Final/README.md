@@ -20,7 +20,9 @@
 <img src="https://github.com/hakanozer/tukcell_kotlin_2024/assets/64108119/7711396e-3343-4e2a-9bc1-89d13a061a7d" alt="project-screenshot" width="150" height="350/">
 <img src="https://github.com/hakanozer/tukcell_kotlin_2024/assets/64108119/51d2b44e-3372-490c-9d45-4efe4e18b436" alt="project-screenshot" width="150" height="350/">
 <img src="https://github.com/hakanozer/tukcell_kotlin_2024/assets/64108119/7947bbcc-209f-4ffe-a3aa-4b6743245cb8" alt="project-screenshot" width="150" height="350/">
-
+<img src="https://github.com/hakanozer/tukcell_kotlin_2024/assets/64108119/f300a2da-2931-43a4-b453-adc3ed6ab7ff" alt="project-screenshot" width="150" height="350/">
+<img src="https://github.com/hakanozer/tukcell_kotlin_2024/assets/64108119/b91b31b5-2bb8-4c7f-9c39-0e342154aff2" alt="project-screenshot" width="150" height="350/">
+<img src="https://github.com/hakanozer/tukcell_kotlin_2024/assets/64108119/de659a88-4596-4eb6-a5ca-2d42f4a23c6f" alt="project-screenshot" width="150" height="350/">
 
 <h2>💻 Built with</h2>
 
