@@ -1,5 +1,37 @@
 # <p align="center"> Tlc-Store </p>
 
+
+## 🍍: Components 
+- Jetpack Compose
+- Compose Navigation
+- XML
+- SkydovesSpinner
+- Glide
+- Push Notification
+- Room
+- MVVM
+- Hilt
+- Hilt Testing
+- Coroutines
+- Flow
+- Retrofit
+- Clean Architecture
+- Material Design
+- Data Store
+- Pagination
+- Viewpager
+- Viewbinding-db
+- Compose Foundation
+- Gson
+- Firebase Authentication
+- Firebase Remote Config
+- Firebase FCM
+- Firebase Crashlytics
+- Firebase Analytics
+- Firebase Performance-Tracing
+- Google Permissions
+- Animations
+- 
 ## 📸 Screenshots
 <p align="center">
   
