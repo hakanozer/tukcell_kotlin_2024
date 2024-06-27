@@ -57,7 +57,6 @@
 <img src="https://github.com/hakanozer/tukcell_kotlin_2024/assets/70065773/91540bb6-bde7-4a9e-934e-81e80445c0b6" width="170" height="auto" alt="zprofile-1">
 <img src="https://github.com/hakanozer/tukcell_kotlin_2024/assets/70065773/c56c17ac-e91f-4256-b0c3-4ffe720eb805" width="170" height="auto" alt="zprofile2">
 <img src="https://github.com/hakanozer/tukcell_kotlin_2024/assets/70065773/8ee025f0-9630-4628-af41-cc0ecb4ff373" width="170" height="auto" alt="editprofile">
-<img src="https://github.com/hakanozer/tukcell_kotlin_2024/assets/70065773/697e0733-e5df-4adc-ac0d-ae28f85c2a5c" width="170" height="auto" alt="animfornavigations">
 <img src="https://github.com/hakanozer/tukcell_kotlin_2024/assets/70065773/5582bc4b-35e3-4171-9cae-07c7c5ca7431" width="340" height="auto" alt="firebasenotifsc">
 <img src="https://github.com/hakanozer/tukcell_kotlin_2024/assets/70065773/22ba6d43-b69b-4b9b-9ab5-1b8ff9c27f75" width="170" height="auto" alt="firecrashl">
 <img src="https://github.com/hakanozer/tukcell_kotlin_2024/assets/70065773/f8972c26-6c41-41d8-aab7-11a570c6d08f" width="170" height="auto" alt="fireperform">
