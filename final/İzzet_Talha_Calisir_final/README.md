@@ -63,10 +63,7 @@
 <img src="https://github.com/hakanozer/tukcell_kotlin_2024/assets/70065773/f8972c26-6c41-41d8-aab7-11a570c6d08f" width="170" height="auto" alt="fireperform">
 <img src="https://github.com/hakanozer/tukcell_kotlin_2024/assets/70065773/09753259-f0b4-4578-87f7-94901ee4ddd7" width="170" height="auto" alt="incomingnotif">
 <img src="https://github.com/hakanozer/tukcell_kotlin_2024/assets/70065773/4dfa4060-10d7-4e83-a7f6-57ca10c56f38" width="170" height="auto" alt="recoveryaccount">
-<img src="https://github.com/hakanozer/tukcell_kotlin_2024/assets/70065773/707b33d1-36df-4225-ad26-c4e86822de56" width="170" height="auto" alt="room">
 <img src="https://github.com/hakanozer/tukcell_kotlin_2024/assets/70065773/f3aed052-5d05-4b57-ad7e-33ae0b1b1a8c" width="170" height="auto" alt="sendrecoverymail">
-<img src="https://github.com/hakanozer/tukcell_kotlin_2024/assets/70065773/bd4270e7-d94f-4859-8815-2f75debf5dff" width="170" height="auto" alt="testing">
-<img src="https://github.com/hakanozer/tukcell_kotlin_2024/assets/70065773/0b5fd424-1b2d-43e7-9893-e720d22c4fcd" width="170" height="auto" alt="tracing">
 </p>
 
 
